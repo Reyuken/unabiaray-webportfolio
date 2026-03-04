@@ -14,7 +14,7 @@ class Footer extends HTMLElement {
             <div class="sort-note">
               <a class="navbar-brand" href="index.html">Ray.U</a>
               <p>I’m Ray Unabia, a passionate and driven Junior Web Developer with strong front-end development skills and a keen eye for design.</p>
-              <hr style="margin: 20px 0; color: rgb(82, 82, 82); width: 60%;">
+              <hr>
               <span class="contact"><a href="" class="email">
                 <img src="./img/email.png" alt="email me"> &nbsp; &nbsp;
                 rayunabia2@gmail.com</a></span>
@@ -39,13 +39,13 @@ class Footer extends HTMLElement {
             <div class="social-links text-center">
               <a href="https://linkedin.com/in/ray-unabia-ba135a281/" target="_blank">
                 <img src="./img/LinkedIn Circled.png" alt="LinkedIn">
-              </a><br>
+              </a>
 
-              <!-- <a href=""><img src="./img/Instagram.png" alt="Instagram"></a><br> -->
+              <!-- <a href=""><img src="./img/Instagram.png" alt="Instagram"></a>-->
 
               <a href="https://twitter.com/" target="_blank">
                 <img src="./img/Twitter.png" alt="Twitter">
-              </a><br>
+              </a>
 
               <a href="https://github.com/Reyuken" target="_blank">
                 <img src="./img/GitHub.png" alt="GitHub">
