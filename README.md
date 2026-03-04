@@ -32,7 +32,7 @@ The design and structure were inspired by the **Freelance Web Developer Portfoli
 ## 🚀 Live Demo  
 
 You can view the live website here:  
-`[Insert your GitHub Pages link here]`
+https://reyuken.github.io/unabiaray-webportfolio/
 
 ---
 
