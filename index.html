@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./Favicon/favicon-16x16.png">
+	<link rel="manifest" href="./Favicon/site.webmanifest">
+	<!-- bootstrap css -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Satisfy&display=swap"
+		rel="stylesheet">
+	<!-- my css -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- title -->
+	<title>Ray Unabia | Portfolio</title>
+</head>
+
+<body>
+	<!-- navbar -->
+	<main-header>
+		<nav class="navbar navbar-expand-md navbar-light bg-light ">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">Ray.U</a>
+				<button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+					type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="toggler-icon top-bar"></span>
+					<span class="toggler-icon middle-bar"></span>
+					<span class="toggler-icon bottom-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+					<ul class="navbar-nav m-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active p-4" aria-current="page" href="#landing">Home</a>
+						</li>
+						<a class="nav-link p-4" aria-current="page" href="#projects">Projects</a>
+						</li>
+						<a class="nav-link p-4" aria-current="page" href="#tools">Tools</a>
+						</li>
+						</li>
+						<a class="nav-link p-4" aria-current="page" href="#connectMe">Contact</a>
+						</li>
+					</ul>
+					<a href="" download=" " class="my-cv">Download
+						CV</a>
+				</div>
+			</div>
+		</nav>
+	</main-header>
+
+	<!-- hero section -->
+	<div class="first-section" id="landing">
+		<div class="container-fluid">
+
+			<div class="row justify-content-center">
+
+				<div class="col-md-6">
+					<div class="intro ">
+						<!-- <p class="title">-INTRODUCTION</p> -->
+						<p class="hi">Full Stack Web Developer</p>
+						<h1 class="my-name outline-text">I'm <span>Ray P. Unabia</span></h1>
+						<p class="slogun">I'm a passionate Fullstack Web Developer with experience building responsive
+							and dynamic web applications. I enjoy creating seamless user experiences, solving complex
+							problems, and writing clean, maintainable code that makes both users and developers happy.
+						</p>
+
+						<a href="#connectMe" class="homeBtn">Let’s create an awesome website !</a>
+						<div class="social-media">
+							<a href="https://linkedin.com/in/ray-unabia-ba135a281/" target="_blank"><img
+									src="./img/LinkedIn Circled.png" alt="linkedin"></a>
+							<a href="https://twitter.com/" target="_blank"> <img src="img/twt2.png" alt="twitter"></a>
+							<a href="https://github.com/Reyuken" target="_blank"><img src="./img/GitHub.png"
+									alt="github"></a>
+
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-6 pb-0 img">
+					<img src="img/myImage2.png" alt="" srcset="" class="rounded-2 ">
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Projects Section -->
+	<section id="projects" class="py-5 bg-light">
+		<div class="container">
+			<h1 class="text-center mb-5">My Projects</h1>
+			<div class="row g-4">
+
+				<!-- Project Card 1 -->
+				<div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+					<div class="card h-100">
+						<img src="./img/E-commerce API Documentation.png" class="card-img-top"
+							alt="E-commerce API Documentation">
+						<div class="card-body">
+							<h5 class="card-title">E-commerce API Documentation</h5>
+							<p class="card-text">Dynamic E-Commerce Workflow Management. The system features dynamic
+								routes for order processing, real-time inventory updates, and secure user
+								authentication. Documented Backend API published publicly using Postman.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project Card 2 -->
+				<div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+					<div class="card h-100">
+						<img src="./img/Course Booking API Documentation.jpg" class="card-img-top"
+							alt="Course Booking API Documentation">
+						<div class="card-body">
+							<h5 class="card-title">Course Booking API Documentation</h5>
+							<p class="card-text">RESTful API for managing course enrollments, featuring user
+								registration, authentication, and course management. Publicly documented using Postman.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project Card 3 -->
+				<div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+					<div class="card h-100">
+						<img src="./img/Course Booking App.jpg" class="card-img-top" alt="Course Booking App">
+						<div class="card-body">
+							<h5 class="card-title">Course Booking App</h5>
+							<p class="card-text">A MERN-stack course enrollment system with user registration,
+								authentication, profile management, and course browsing functionality.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project Card 4 -->
+				<div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+					<div class="card h-100">
+						<img src="./img/E-commerce App.png" class="card-img-top" alt="E-commerce App">
+						<div class="card-body">
+							<h5 class="card-title">E-commerce App</h5>
+							<p class="card-text">MERN E-Commerce Platform with product catalog, real-time search,
+								seamless cart updates, secure checkout, and admin dashboard with analytics.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project Card 5 -->
+				<div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+					<div class="card h-100">
+						<img src="./img/Airline Booking System Mockup.jpg" class="card-img-top"
+							alt="Airline Booking System Mockup">
+						<div class="card-body">
+							<h5 class="card-title">Airline Booking System Mockup</h5>
+							<p class="card-text">Conceptual UI for flight search, seat selection, and booking
+								confirmation, focusing on user experience.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project Card 6 -->
+				<div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+					<div class="card h-100">
+						<img src="./img/Airline Booking System Prototype.png" class="card-img-top"
+							alt="Airline Booking System Prototype">
+						<div class="card-body">
+							<h5 class="card-title">Airline Booking System Prototype</h5>
+							<p class="card-text">Interactive prototype simulating end-to-end airline booking: flight
+								search, reservations, payments, and ticket management.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project Card 7 -->
+				<div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+					<div class="card h-100">
+						<img src="./img/shortcourses.png" class="card-img-top" alt="Short Courses Capstone">
+						<div class="card-body">
+							<h5 class="card-title">Short Courses Capstone</h5>
+							<p class="card-text">Capstone project integrating multiple short courses into a cohesive
+								application.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project Card 8 -->
+				<div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+					<div class="card h-100">
+						<img src="./img/shortcourses.png" class="card-img-top" alt="Short Courses Capstone">
+						<div class="card-body">
+							<h5 class="card-title">Short Courses Capstone</h5>
+							<p class="card-text">Capstone project integrating multiple short courses into a cohesive
+								application.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project Card 9 -->
+				<div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+					<div class="card h-100">
+						<img src="./img/shortcourses.png" class="card-img-top" alt="Short Courses Capstone">
+						<div class="card-body">
+							<h5 class="card-title">Short Courses Capstone</h5>
+							<p class="card-text">Capstone project integrating multiple short courses into a cohesive
+								application.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- Tools -->
+	<div class="section bg" id="tools">
+		<div class="container-fluid">
+			<p class="title">-SKILLS</p>
+
+			<div class="skill-section text-center">
+				<h1>AREA OF EXPERTISE</h1>
+				<p class="para">
+					Let's kickstart your project and collaborate to build something amazing. I'll bring my
+					skills to make your next project shine.
+				</p>
+			</div>
+			<div id="toolsContainer">
+				<!-- FRONT END -->
+				<div>
+					<h3 class="mt-5">Front End</h3>
+					<div class="skills">
+						<div class="skill">
+							<div class="items"><img src="./img/html.png" alt="">
+								<p>HTML</p>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="items"><img src="./img/css.png" alt="">
+								<p>CSS</p>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="items"><img src="./img/javascript (1).png" alt="">
+								<p>JavaScript</p>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="items"><img src="./img/Bootstrap 1.png" alt="">
+								<p>Bootstrap</p>
+							</div>
+						</div>
+
+						<!-- <div class="skill"><div class="items"><img src="./img/icons8-figma-512.png" alt=""><p>Figma</p></div></div>
+      					<div class="skill"><div class="items"><img src="./img/adobe-xd.png" alt=""><p>Adobe XD</p></div></div>
+      					<div class="skill"><div class="items"><img src="./img/photoshop.png" alt=""><p>Photoshop</p></div></div> -->
+					</div>
+				</div>
+
+				<!-- MERN STACK -->
+				<div>
+					<h3 class="mt-5">MERN Stack</h3>
+					<div class="skills">
+						<div class="skill">
+							<div class="items"><img src="./img/mongodb.png" alt="">
+								<p>MongoDB</p>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="items"><img src="./img/expressjs.png" alt="">
+								<p>Express</p>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="items"><img src="./img/react (2).png" alt="">
+								<p>React</p>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="items"><img src="./img/node-js.png" alt="">
+								<p>Node.js</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- OTHERS -->
+				<div>
+					<h3 class="mt-5">Other Tools</h3>
+					<div class="skills">
+						<div class="skill">
+							<div class="items"><img src="./img/heroku.png" alt="">
+								<p>Heroku</p>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="items"><img src="./img/git (2).png" alt="">
+								<p>Git</p>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="items"><img src="./img/sublime.png" alt="">
+								<p>Sublime</p>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="items"><img src="./img/postman.png" alt="">
+								<p>Postman</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- connect me
+	<div class="section">
+		<div class="container-fluid bg rounded text-center pb-5 pos-relative">
+			<img src="./img/Rocket1.png" alt="">
+			<h1 class="custom-h1">HAVE A PROJECT IN MIND?</h1>
+			<p class="para p-4">Turn your dream website into reality with us. Let's get started!</p>
+
+
+
+			<a href="" class="homeBtn">Let’s create an awesome website</a>
+
+
+		</div>
+	</div> -->
+	<!-- connect me -->
+	<div id="connectMe" class="section">
+		<div class="container-fluid">
+			<p class="title">-CONTACT</p>
+			<div class="contact-section ">
+				<div class="d-flex flex-column align-items-center text-center">
+				<h1>GET IN TOUCH</h1>
+				<p class="para">I'm here and ready to bring your project ideas to life. Just a click away!</p>
+				</div>
+				<div class="row img-sec justify-content-center">
+
+					<div class="col-md-6">
+						<div class="form">
+							<form class="formSubmit" action="" method="POST">
+								<input type="text" placeholder="Full Name"><br>
+								<input type="email" placeholder="Email">
+								<input type="number" placeholder="Phone No."><br>
+								<textarea name="message" id="msg" placeholder="Message" cols="30"
+									rows="10"></textarea><br>
+								<button class="button" type="submit">Send Message</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- footer -->
+	<main-footer></main-footer>
+	<div class="footer-bottom"><span id="year"></span> © Portfolio Pvt. Ltd. All Rights Reserved.</div>
+
+
+	<button class="back-to-top" type="button"></button>
+
+	<!--form script-->
+	<script src="./js/form.js"></script>
+
+	<!-- jquiry -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<!--custom js  -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>
