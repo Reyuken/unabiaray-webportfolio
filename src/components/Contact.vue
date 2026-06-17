@@ -1,6 +1,6 @@
 <script setup>
 import { Notyf } from 'notyf'
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, onMounted, onBeforeUnmount, computed } from 'vue'
 
 const notyf = new Notyf()
 
@@ -13,7 +13,21 @@ const isLoading = ref(false)
 const WEB3FORMS_ACCESS_KEY = 'fac39e60-2ac3-4026-8d1f-e925223f2685'
 const subject = 'New message from Portfolio Contact Form'
 
+const isFormValid = computed(() => {
+    return (
+        name.value.trim() !== '' &&
+        email.value.trim() !== '' &&
+        phone.value.trim() !== '' &&
+        message.value.trim() !== ''
+    )
+})
+
 const submitForm = async () => {
+    if (!isFormValid.value) {
+        notyf.error('Please fill in all required fields')
+        return
+    }
+
     if (!recaptchaToken.value) {
         notyf.error('Please verify that you are not a robot')
         return
@@ -145,7 +159,7 @@ onMounted(() => {
 
                             <textarea v-model="message" placeholder="Message" rows="6"></textarea>
 
-                            <button type="submit" :disabled="isLoading">
+                            <button type="submit" :disabled="isLoading || !isFormValid">
                                 {{ isLoading ? 'Sending...' : 'Send Message' }}
                             </button>
                             <div ref="recaptchaContainer" class="recaptcha"></div>
