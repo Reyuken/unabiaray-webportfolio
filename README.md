@@ -1,45 +1,38 @@
-# 🌐 Portfolio Website
+# csp1-vue
 
-## 📌 Overview
-This is my personal portfolio website showcasing my projects, skills, and contact information. The website highlights the work I have completed and demonstrates my understanding of front-end web development principles.
+This template should help get you started developing with Vue 3 in Vite.
 
-This project was developed **in alignment with the Zuitt Bootcamp curriculum**, applying the concepts, standards, and best practices covered throughout the program.
+## Recommended IDE Setup
 
-The design and structure were inspired by the **Freelance Web Developer Portfolio Template** by [Divya K](https://github.com/Iamdivyak/Freelance-Web-Developer-Portfolio-Template), which served as a reference for layout and styling.
+[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
----
+## Recommended Browser Setup
 
-## 🛠️ Built With  
+- Chromium-based browsers (Chrome, Edge, Brave, etc.):
+  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
+- Firefox:
+  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
+  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
 
-- `HTML5`  
-- `CSS3`  
-- `Bootstrap 5`  
-- `Git` & `GitHub`  
-- `GitHub Pages` (for deployment)
+## Customize configuration
 
----
+See [Vite Configuration Reference](https://vite.dev/config/).
 
-## 🎯 Features  
+## Project Setup
 
-- Responsive design (mobile-friendly)  
-- Projects section with preview cards  
-- Contact section  
-- Clean and modern UI  
-- Hosted using `GitHub Pages`  
+```sh
+npm install
+```
 
----
+### Compile and Hot-Reload for Development
 
-## 🚀 Live Demo  
+```sh
+npm run dev
+```
 
-You can view the live website here:  
-https://reyuken.github.io/unabiaray-webportfolio/
+### Compile and Minify for Production
 
----
-
-## 📚 Acknowledgment  
-
-- Portfolio template inspiration:  
-  Freelance Web Developer Portfolio Template by Divya K  
-
-- Zuitt Bootcamp Instructor:  
-  **Riza May Ayson** — for guidance, instruction, and support throughout the program.
+```sh
+npm run build
+```
