@@ -1,13 +1,5 @@
 # 📌 Portfolio - Ray P. Unabia
 
-⚠️ **Notice:**  
-This portfolio is in compliance with the Zuitt Bootcamp program and is currently under development.
-
-You may view the live version or previous version here:  
-👉 https://my-portfolio-seven-psi-54.vercel.app
-
----
-
 # 👨‍💻 About Me
 
 Hi, I’m **Ray P. Unabia**, a passionate **Full Stack Web Developer**.
