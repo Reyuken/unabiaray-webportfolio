@@ -61,7 +61,7 @@ const submitForm = async () => {
 }
 
 /* reCAPTCHA */
-const SITE_KEY = '6LdsCSQtAAAAAI3zwSU1bLXBa7sA9nANB8jObfTJ'
+const SITE_KEY = '6LfXDSQtAAAAANZnQtD05RnxD-rA8GHLsjXV8PAL'
 const recaptchaContainer = ref(null)
 const recaptchaWidgetId = ref(null)
 const recaptchaToken = ref('')
