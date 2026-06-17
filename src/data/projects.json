@@ -3,7 +3,7 @@
         "id": 1,
         "title": "E-commerce API Documentation",
         "description": "Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. It also supports seamless automated order reporting and comprehensive product management. Documented Backend API published publicly using Postman.",
-        "image": "/img/E-commerce API Documentation1.JPG",
+        "image": "/unabiaray-webportfolio/img/E-commerce API Documentation1.JPG",
         "link": "https://documenter.getpostman.com/view/53639391/2sBXqJLLzR",
         "status": "live"
     },
@@ -11,7 +11,7 @@
         "id": 2,
         "title": "E-commerce App",
         "description": "MEVN E-Commerce Platform with product catalog, real-time search, seamless cart updates, secure checkout, and admin dashboard with analytics.",
-        "image": "/img/E-commerce App.JPG",
+        "image": "/unabiaray-webportfolio/img/E-commerce App.JPG",
         "link": "http://zuitt-bootcamp-prod-606-9494-unabia.s3-website.us-east-1.amazonaws.com/#/",
         "status": "live"
     },
@@ -19,7 +19,7 @@
         "id": 3,
         "title": "Fitness Tracking App",
         "description": "A full-stack fitness tracking application that allows users to log workouts, track progress, manage exercise routines, and monitor daily fitness activity with a clean and responsive UI.",
-        "image": "/img/fitnessTrackerClient.JPG",
+        "image": "/unabiaray-webportfolio/img/fitnessTrackerClient.JPG",
         "link": "https://fitness-app-client-unabia.vercel.app/#/",
         "status": "live"
     },
@@ -27,7 +27,7 @@
         "id": 4,
         "title": "Movie App Client",
         "description": "A full-stack movie management application with user authentication, movie catalog browsing, CRUD operations for admins, and a comment system for user engagement.",
-        "image": "/img/MovieAppClient.JPG",
+        "image": "/unabiaray-webportfolio/img/MovieAppClient.JPG",
         "link": "https://movie-app-unabia.vercel.app/#/",
         "status": "live"
     },
@@ -35,49 +35,49 @@
         "id": 5,
         "title": "Course Booking API Documentation",
         "description": "RESTful API for managing course enrollments, featuring user registration, authentication, and course management. Publicly documented using Postman.",
-        "image": "/img/Course Booking API Documentation.jpg",
+        "image": "/unabiaray-webportfolio/img/Course Booking API Documentation.jpg",
         "status": ""
     },
     {
         "id": 6,
         "title": "Course Booking App",
         "description": "A MERN-stack course enrollment system with user registration, authentication, profile management, and course browsing functionality.",
-        "image": "/img/Course Booking App.jpg",
+        "image": "/unabiaray-webportfolio/img/Course Booking App.jpg",
         "status": ""
     },
     {
         "id": 7,
         "title": "Airline Booking System Mockup",
         "description": "Conceptual UI for flight search, seat selection, and booking confirmation, focusing on user experience.",
-        "image": "/img/Airline Booking System Mockup.JPG",
+        "image": "/unabiaray-webportfolio/img/Airline Booking System Mockup.JPG",
         "status": ""
     },
     {
         "id": 8,
         "title": "Airline Booking System Prototype",
         "description": "Interactive prototype simulating end-to-end airline booking: flight search, reservations, payments, and ticket management.",
-        "image": "/img/Airline Booking System Prototype.png",
+        "image": "/unabiaray-webportfolio/img/Airline Booking System Prototype.png",
         "status": ""
     },
     {
         "id": 9,
         "title": "Short Courses Capstone",
         "description": "Capstone project integrating multiple short courses into a cohesive application.",
-        "image": "/img/shortcourses.png",
+        "image": "/unabiaray-webportfolio/img/shortcourses.png",
         "status": ""
     },
     {
         "id": 10,
         "title": "Short Courses Capstone",
         "description": "Capstone project integrating multiple short courses into a cohesive application.",
-        "image": "/img/shortcourses.png",
+        "image": "/unabiaray-webportfolio/img/shortcourses.png",
         "status": ""
     },
     {
         "id": 11,
         "title": "Short Courses Capstone",
         "description": "Capstone project integrating multiple short courses into a cohesive application.",
-        "image": "/img/shortcourses.png",
+        "image": "/unabiaray-webportfolio/img/shortcourses.png",
         "status": ""
     }
 ]

@@ -1,22 +1,24 @@
 <script setup>
+const base = import.meta.env.BASE_URL
+
 const tools = {
     frontend: [
-        { name: 'HTML', img: '/img/html.png' },
-        { name: 'CSS', img: '/img/css.png' },
-        { name: 'JavaScript', img: '/img/javascript (1).png' },
-        { name: 'Bootstrap', img: '/img/bootstrap 1.png' }
+        { name: 'HTML', img: base + 'img/html.png' },
+        { name: 'CSS', img: base + 'img/css.png' },
+        { name: 'JavaScript', img: base + 'img/javascript (1).png' },
+        { name: 'Bootstrap', img: base + 'img/bootstrap 1.png' }
     ],
     mern: [
-        { name: 'MongoDB', img: '/img/mongodb.png' },
-        { name: 'Express', img: '/img/expressjs.png' },
-        { name: 'React', img: '/img/react (2).png' },
-        { name: 'Node.js', img: '/img/node-js.png' }
+        { name: 'MongoDB', img: base + 'img/mongodb.png' },
+        { name: 'Express', img: base + 'img/expressjs.png' },
+        { name: 'React', img: base + 'img/react (2).png' },
+        { name: 'Node.js', img: base + 'img/node-js.png' }
     ],
     others: [
-        { name: 'Heroku', img: '/img/heroku.png' },
-        { name: 'Git', img: '/img/git (2).png' },
-        { name: 'Sublime', img: '/img/sublime.png' },
-        { name: 'Postman', img: '/img/postman.png' }
+        { name: 'Heroku', img: base + 'img/heroku.png' },
+        { name: 'Git', img: base + 'img/git (2).png' },
+        { name: 'Sublime', img: base + 'img/sublime.png' },
+        { name: 'Postman', img: base + 'img/postman.png' }
     ]
 }
 </script>
@@ -72,7 +74,6 @@ const tools = {
 </template>
 
 <style scoped>
-
 .bg {
     background: #f7f7f7;
     padding: 60px 0;
