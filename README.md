@@ -1,38 +1,126 @@
-# csp1-vue
+# 📌 Portfolio - Ray P. Unabia
 
-This template should help get you started developing with Vue 3 in Vite.
+⚠️ **Notice:**  
+This portfolio is in compliance with the Zuitt Bootcamp program and is currently under development.
 
-## Recommended IDE Setup
+You may view the live version or previous version here:  
+👉 https://my-portfolio-seven-psi-54.vercel.app
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Recommended Browser Setup
+# 👨‍💻 About Me
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+Hi, I’m **Ray P. Unabia**, a passionate **Full Stack Web Developer**.
 
-## Customize configuration
+I enjoy building:
+- Responsive web applications
+- Dynamic and interactive user interfaces
+- Clean and maintainable code
+- Seamless user experiences
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+I love solving problems and turning ideas into real-world applications.
 
-## Project Setup
+---
 
-```sh
-npm install
-```
+# 🚀 Portfolio Overview
 
-### Compile and Hot-Reload for Development
+This portfolio showcases my projects, skills, and development experience across different stacks including:
 
-```sh
-npm run dev
-```
+- Frontend Development
+- Backend APIs
+- Full-stack applications
+- UI/UX concepts and prototypes
 
-### Compile and Minify for Production
+---
 
-```sh
-npm run build
-```
+# 🧩 Featured Projects
+
+## 🛒 E-commerce API Documentation
+A dynamic E-Commerce workflow system with:
+- Order processing
+- Real-time inventory updates
+- Secure authentication
+- Public API documentation via Postman
+
+---
+
+## 🛍️ E-commerce App
+MEVN stack e-commerce platform featuring:
+- Product catalog
+- Real-time search
+- Shopping cart system
+- Secure checkout
+- Admin dashboard with analytics
+
+---
+
+## 📚 Course Booking System
+
+### API Version
+RESTful API with:
+- User authentication
+- Course management
+- Enrollment system
+
+### Full App Version
+MERN-stack application with:
+- User registration & login
+- Profile management
+- Course browsing & enrollment
+
+---
+
+## ✈️ Airline Booking System
+
+### Mockup
+- UI/UX design for flight search & booking
+
+### Prototype
+- Interactive booking flow simulation
+- Seat selection and ticket management
+
+---
+
+## 🎓 Short Courses Capstone
+Capstone projects combining multiple modules into a unified application showcasing full-stack development skills.
+
+---
+
+# 🛠️ Skills
+
+## Frontend
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+
+## MERN Stack
+- MongoDB
+- Express.js
+- React
+- Node.js
+
+## Tools & Platforms
+- Git & GitHub
+- Postman
+- Heroku
+- Sublime Text
+
+---
+
+# 📫 Contact
+
+Let’s work together and build something amazing!
+
+- 📧 Email: rayunabia2@gmail.com  
+- 🔗 LinkedIn: (add link here)  
+- 🐙 GitHub: (add link here)  
+- 🐦 Twitter: (add link here)
+
+---
+
+# 📍 Footer
+
+“I’m a driven Junior Web Developer focused on building clean, scalable, and user-friendly applications.”
+
+© 2026 Ray Unabia. All Rights Reserved.
