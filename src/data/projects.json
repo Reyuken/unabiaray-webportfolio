@@ -17,6 +17,14 @@
     },
     {
         "id": 3,
+        "title": "Fitness Tracking API Documentation",
+        "description": "A structured fitness tracking backend that manages user authentication, workout records, exercise routines, and progress monitoring. It enables real-time tracking of fitness activities, automated activity summaries, and organized data handling for seamless integration with the frontend. Documented Backend API published publicly using Postman.",
+        "image": "/unabiaray-webportfolio/img/fitnessTrackerAPI.JPG",
+        "link": "https://fitnessapp-api-ln8u.onrender.com",
+        "status": "live"
+    },
+    {
+        "id": 4,
         "title": "Fitness Tracking App",
         "description": "A full-stack fitness tracking application that allows users to log workouts, track progress, manage exercise routines, and monitor daily fitness activity with a clean and responsive UI.",
         "image": "/unabiaray-webportfolio/img/fitnessTrackerClient.JPG",
@@ -24,7 +32,7 @@
         "status": "live"
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "Movie App Client",
         "description": "A full-stack movie management application with user authentication, movie catalog browsing, CRUD operations for admins, and a comment system for user engagement.",
         "image": "/unabiaray-webportfolio/img/MovieAppClient.JPG",
@@ -32,35 +40,35 @@
         "status": "live"
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "Course Booking API Documentation",
         "description": "RESTful API for managing course enrollments, featuring user registration, authentication, and course management. Publicly documented using Postman.",
         "image": "/unabiaray-webportfolio/img/Course Booking API Documentation.jpg",
         "status": ""
     },
     {
-        "id": 6,
+        "id": 7,
         "title": "Course Booking App",
         "description": "A MERN-stack course enrollment system with user registration, authentication, profile management, and course browsing functionality.",
         "image": "/unabiaray-webportfolio/img/Course Booking App.jpg",
         "status": ""
     },
     {
-        "id": 7,
+        "id": 8,
         "title": "Airline Booking System Mockup",
         "description": "Conceptual UI for flight search, seat selection, and booking confirmation, focusing on user experience.",
         "image": "/unabiaray-webportfolio/img/Airline Booking System Mockup.JPG",
         "status": ""
     },
     {
-        "id": 8,
+        "id": 9,
         "title": "Airline Booking System Prototype",
         "description": "Interactive prototype simulating end-to-end airline booking: flight search, reservations, payments, and ticket management.",
         "image": "/unabiaray-webportfolio/img/Airline Booking System Prototype.png",
         "status": ""
     },
     {
-        "id": 9,
+        "id": 12,
         "title": "Short Courses Capstone",
         "description": "Capstone project integrating multiple short courses into a cohesive application.",
         "image": "/unabiaray-webportfolio/img/shortcourses.png",
