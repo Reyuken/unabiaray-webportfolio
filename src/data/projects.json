@@ -1,5 +1,13 @@
 [
     {
+        "id": 0,
+        "title": "Blog Post Management System",
+        "description": "Full-stack blog platform built with the MEVN stack. Features include user authentication, role-based access control, CRUD blog posts, nested comment system, and admin moderation tools.",
+        "image": "/unabiaray-webportfolio/img/Blog App.JPG",
+        "link": "https://blog-app-client-unabia.vercel.app/#/",
+        "status": "live"
+    },
+    {
         "id": 1,
         "title": "E-commerce API Documentation",
         "description": "Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. It also supports seamless automated order reporting and comprehensive product management. Documented Backend API published publicly using Postman.",
