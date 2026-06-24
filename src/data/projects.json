@@ -1,6 +1,6 @@
 [
     {
-        "id": 3,
+        "id": 1,
         "title": "Blog Post Management API Documentation",
         "description": "A RESTful blog management backend that handles user authentication, role-based access control, blog post creation, and comment management. The API supports secure JWT authentication, CRUD operations for blog posts, user-owned content management, admin privileges, and a comment system with edit tracking and moderation capabilities. Fully documented and publicly accessible through Postman for testing and integration.",
         "image": "/unabiaray-webportfolio/img/blogPostAPI.JPG",
@@ -8,7 +8,7 @@
         "status": "live"
     },
     {
-        "id": 0,
+        "id": 2,
         "title": "Blog Post Management System",
         "description": "Full-stack blog platform built with the MEVN stack. Features include user authentication, role-based access control, CRUD blog posts, nested comment system, and admin moderation tools.",
         "image": "/unabiaray-webportfolio/img/Blog App.JPG",
@@ -16,7 +16,7 @@
         "status": "live"
     },
     {
-        "id": 1,
+        "id": 3,
         "title": "E-commerce API Documentation",
         "description": "Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. It also supports seamless automated order reporting and comprehensive product management. Documented Backend API published publicly using Postman.",
         "image": "/unabiaray-webportfolio/img/E-commerce API Documentation1.JPG",
@@ -24,7 +24,7 @@
         "status": "live"
     },
     {
-        "id": 2,
+        "id": 4,
         "title": "E-commerce App",
         "description": "MEVN E-Commerce Platform with product catalog, real-time search, seamless cart updates, secure checkout, and admin dashboard with analytics.",
         "image": "/unabiaray-webportfolio/img/E-commerce App.JPG",
@@ -32,7 +32,7 @@
         "status": "live"
     },
     {
-        "id": 3,
+        "id": 5,
         "title": "Fitness Tracking API Documentation",
         "description": "A structured fitness tracking backend that manages user authentication, workout records, exercise routines, and progress monitoring. It enables real-time tracking of fitness activities, automated activity summaries, and organized data handling for seamless integration with the frontend. Documented Backend API published publicly using Postman.",
         "image": "/unabiaray-webportfolio/img/fitnessTrackerAPI.JPG",
@@ -40,7 +40,7 @@
         "status": "live"
     },
     {
-        "id": 4,
+        "id": 6,
         "title": "Fitness Tracking App",
         "description": "A full-stack fitness tracking application that allows users to log workouts, track progress, manage exercise routines, and monitor daily fitness activity with a clean and responsive UI.",
         "image": "/unabiaray-webportfolio/img/fitnessTrackerClient.JPG",
@@ -48,7 +48,7 @@
         "status": "live"
     },
     {
-        "id": 3,
+        "id": 7,
         "title": "MovieVault API Documentation",
         "description": "A RESTful movie management backend that handles user authentication, role-based access control, movie catalog management, and movie comments. The API supports CRUD operations for movies, secure JWT authentication, admin-only actions, and user-generated comments. Fully documented and publicly accessible through Postman for testing and integration.",
         "image": "/unabiaray-webportfolio/img/movieVaultAPI.JPG",
@@ -56,7 +56,7 @@
         "status": "live"
     },
     {
-        "id": 5,
+        "id": 8,
         "title": "Movie App Client",
         "description": "A full-stack movie management application with user authentication, movie catalog browsing, CRUD operations for admins, and a comment system for user engagement.",
         "image": "/unabiaray-webportfolio/img/MovieAppClient.JPG",
@@ -64,49 +64,57 @@
         "status": "live"
     },
     {
-        "id": 6,
+        "id": 9,
+        "title": "3D Portfolio Website",
+        "description": "An interactive 3D portfolio built with Next.js, React Three Fiber, Drei, Three.js, and Tailwind CSS. Features dynamic 3D models, responsive design, smooth navigation, and cross-device compatibility while showcasing projects, technical skills, and professional experience through an engaging user experience.",
+        "image": "/unabiaray-webportfolio/img/Portfolio3D.JPG",
+        "link": "https://my-portfolio-seven-psi-54.vercel.app/",
+        "status": "live"
+    },
+    {
+        "id": 10,
         "title": "Course Booking API Documentation",
         "description": "RESTful API for managing course enrollments, featuring user registration, authentication, and course management. Publicly documented using Postman.",
         "image": "/unabiaray-webportfolio/img/Course Booking API Documentation.jpg",
         "status": ""
     },
     {
-        "id": 7,
+        "id": 11,
         "title": "Course Booking App",
         "description": "A MERN-stack course enrollment system with user registration, authentication, profile management, and course browsing functionality.",
         "image": "/unabiaray-webportfolio/img/Course Booking App.jpg",
         "status": ""
     },
     {
-        "id": 8,
+        "id": 12,
         "title": "Airline Booking System Mockup",
         "description": "Conceptual UI for flight search, seat selection, and booking confirmation, focusing on user experience.",
         "image": "/unabiaray-webportfolio/img/Airline Booking System Mockup.JPG",
         "status": ""
     },
     {
-        "id": 9,
+        "id": 13,
         "title": "Airline Booking System Prototype",
         "description": "Interactive prototype simulating end-to-end airline booking: flight search, reservations, payments, and ticket management.",
         "image": "/unabiaray-webportfolio/img/Airline Booking System Prototype.png",
         "status": ""
     },
     {
-        "id": 12,
+        "id": 14,
         "title": "Short Courses Capstone",
         "description": "Capstone project integrating multiple short courses into a cohesive application.",
         "image": "/unabiaray-webportfolio/img/shortcourses.png",
         "status": ""
     },
     {
-        "id": 10,
+        "id": 15,
         "title": "Short Courses Capstone",
         "description": "Capstone project integrating multiple short courses into a cohesive application.",
         "image": "/unabiaray-webportfolio/img/shortcourses.png",
         "status": ""
     },
     {
-        "id": 11,
+        "id": 16,
         "title": "Short Courses Capstone",
         "description": "Capstone project integrating multiple short courses into a cohesive application.",
         "image": "/unabiaray-webportfolio/img/shortcourses.png",
