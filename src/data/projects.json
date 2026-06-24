@@ -1,5 +1,13 @@
 [
     {
+        "id": 3,
+        "title": "Blog Post Management API Documentation",
+        "description": "A RESTful blog management backend that handles user authentication, role-based access control, blog post creation, and comment management. The API supports secure JWT authentication, CRUD operations for blog posts, user-owned content management, admin privileges, and a comment system with edit tracking and moderation capabilities. Fully documented and publicly accessible through Postman for testing and integration.",
+        "image": "/unabiaray-webportfolio/img/blogPostAPI.JPG",
+        "link": "https://documenter.getpostman.com/view/53639391/2sBXwwnnw1",
+        "status": "live"
+    },
+    {
         "id": 0,
         "title": "Blog Post Management System",
         "description": "Full-stack blog platform built with the MEVN stack. Features include user authentication, role-based access control, CRUD blog posts, nested comment system, and admin moderation tools.",
@@ -28,7 +36,7 @@
         "title": "Fitness Tracking API Documentation",
         "description": "A structured fitness tracking backend that manages user authentication, workout records, exercise routines, and progress monitoring. It enables real-time tracking of fitness activities, automated activity summaries, and organized data handling for seamless integration with the frontend. Documented Backend API published publicly using Postman.",
         "image": "/unabiaray-webportfolio/img/fitnessTrackerAPI.JPG",
-        "link": "https://fitnessapp-api-ln8u.onrender.com",
+        "link": "https://documenter.getpostman.com/view/53639391/2sBXwtq9Yb",
         "status": "live"
     },
     {
@@ -37,6 +45,14 @@
         "description": "A full-stack fitness tracking application that allows users to log workouts, track progress, manage exercise routines, and monitor daily fitness activity with a clean and responsive UI.",
         "image": "/unabiaray-webportfolio/img/fitnessTrackerClient.JPG",
         "link": "https://fitness-app-client-unabia.vercel.app/#/",
+        "status": "live"
+    },
+    {
+        "id": 3,
+        "title": "MovieVault API Documentation",
+        "description": "A RESTful movie management backend that handles user authentication, role-based access control, movie catalog management, and movie comments. The API supports CRUD operations for movies, secure JWT authentication, admin-only actions, and user-generated comments. Fully documented and publicly accessible through Postman for testing and integration.",
+        "image": "/unabiaray-webportfolio/img/movieVaultAPI.JPG",
+        "link": "https://documenter.getpostman.com/view/53639391/2sBXwtq9cu",
         "status": "live"
     },
     {
