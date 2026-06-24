@@ -10,18 +10,20 @@ import BackToTop from './components/BackToTop.vue'
 </script>
 
 <template>
-    <div class="notice">
+    <!-- <div class="notice">
         <button class="close-btn" onclick="this.parentElement.style.display='none'">×</button>
 
         <p>
-            ⚠️ This portfolio is in compliance with the Zuitt Bootcamp program and is currently under development.
-            You may browse the site or view previous projects here:
+            Welcome! This portfolio highlights my web development projects, technical skills, and ongoing work.
+            New features and projects are added regularly as I continue to grow as a developer.
             <br><br>
+            For additional projects and earlier work, you may also visit:
+            <br>
             <a href="https://my-portfolio-seven-psi-54.vercel.app" target="_blank">
-                https://my-portfolio-seven-psi-54.vercel.app
+                Previous Portfolio
             </a>
         </p>
-    </div>
+    </div> -->
     <Navbar />
     <About />
     <Projects />
