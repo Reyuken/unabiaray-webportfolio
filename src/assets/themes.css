@@ -1,0 +1,64 @@
+.app.mechanical {
+    --navbar-wrapper-font-family: "IBM Plex Mono", monospace;
+    --navbar-bg: #101215;
+    --nav-links-a-color: #E4E0D5;
+    --navbar-border: #9CA8AA;
+    --nav-links-hover: #B78A54;
+    --brand-color: #B78A54;
+
+    background: #101215;
+    color: #5F4B66;
+
+    --about-name-font-family: "IBM Plex Mono", monospace;
+    --about-text: #E4E0D5;
+    --about-role: #9CA8AA;
+    --about-name: #E4E0D5;
+    --about-name-highlight: #B78A54;
+    --about-description: #B7BFC0;
+    --about-button-text: #101215;
+    --about-button-bg: linear-gradient(90deg,
+            #7B5B34 0%,
+            #B78A54 50%,
+            #E1C08A 100%);
+    --about-button-hover: linear-gradient(135deg,
+            #f2f4f5 0%,
+            #c8ced3 20%,
+            #9ea6ad 50%,
+            #d9dde0 80%,
+            #f7f8f9 100%);
+    --about-profile-radius: 2px;
+    --about-social-filter: grayscale(100%) brightness(.9);
+}
+
+.app.cute {
+    background: #FFE8F2;
+    color: #5F4B66;
+
+
+    --about-name-font-family: 'Satisfy', cursive;
+    --about-text: #ffffff;
+    --about-role: #000000;
+    --about-name: #000000;
+    --about-name-highlight: #f26c4f;
+    --about-description: #000000;
+    --about-button-text: #ffffff;
+    --about-button-bg: linear-gradient(90deg, #5a4ff2 0%, #414eff 81%);
+    --about-button-hover: linear-gradient(90deg,
+            rgba(79, 1, 1, 1) 0%,
+            rgba(242, 79, 79, 1) 81%);
+
+    --about-profile-radius: 12px;
+
+    --about-social-filter: none;
+
+}
+
+.app.hacker {
+    background: #050505;
+    color: #00FF66;
+}
+
+.app.professional {
+    background: white;
+    color: #222;
+}

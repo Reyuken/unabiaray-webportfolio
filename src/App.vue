@@ -5,7 +5,10 @@ import Projects from './components/Projects.vue';
 import Tools from './components/Tools.vue';
 import Contact from './components/Contact.vue';
 import FooterComponent from './components/FooterComponent.vue';
-import BackToTop from './components/BackToTop.vue'
+import BackToTop from './components/BackToTop.vue';
+import { useThemeStore } from './stores/theme';
+
+const themeStore = useThemeStore()
 
 </script>
 
@@ -24,13 +27,17 @@ import BackToTop from './components/BackToTop.vue'
             </a>
         </p>
     </div> -->
-    <Navbar />
-    <About />
-    <Projects />
-    <Tools />
-    <Contact />
-    <FooterComponent />
-    <BackToTop />
+    <div :class="['app', themeStore.theme]">
+
+        <Navbar />
+        <About />
+        <Projects />
+        <Tools />
+        <Contact />
+        <FooterComponent />
+        <BackToTop />
+
+    </div>
 </template>
 
 <style scoped>
