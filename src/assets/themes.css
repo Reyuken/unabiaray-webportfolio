@@ -30,7 +30,7 @@
             #f7f8f9 100%);
     --button-border: #D6B27A;
 
-    --about-profile-radius: 2px;
+    --about-profile-radius: 20px;
     --about-social-filter: grayscale(100%) brightness(.9);
 
     /* PROJECT CARD */

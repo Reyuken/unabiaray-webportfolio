@@ -4,10 +4,9 @@
 <template>
     <section id="landing" class="about-section">
         <div class="container">
-            <div class="row align-items-center g-4">
+            <div class="row align-items-center justify-content-center g-4">
 
                 <div class="col-12 col-md-6 text-content">
-
                     <p class="role">
                         Full Stack Web Developer
                     </p>
@@ -17,10 +16,8 @@
                     </h1>
 
                     <p class="description">
-                        I'm a passionate Fullstack Web Developer with experience building responsive
-                        and dynamic web applications. I enjoy creating seamless user experiences,
-                        solving complex problems, and writing clean, maintainable code that makes both
-                        users and developers happy.
+                        I'm a Full-Stack Web Developer passionate about building responsive web applications with clean
+                        code and seamless user experiences.
                     </p>
 
                     <div class="cta-wrapper">
@@ -47,8 +44,11 @@
 
                 </div>
 
-                <div class="col-12 col-md-6 image-wrapper">
-                    <img src="/img/myImage2.png" alt="Profile" class="profile-img">
+                <div class="col-8 col-md-3 profile-pic">
+                    <div class="image-wrapper">
+                        <img src="/img/mechanicalTheme/mechanical-border.png" alt="border" class="img-border">
+                        <img src="/img/myImage2.png" alt="Profile" class="profile-img">
+                    </div>
                 </div>
 
             </div>
@@ -58,10 +58,12 @@
 
 <style scoped>
 .about-section {
-    min-height: 90vh;
+    /* min-height: 30vh; */
+    /* max-width: 1100px; */
+
     display: flex;
     align-items: center;
-    padding: 60px 0;
+    padding-top: 30px;
 
     background-size: cover;
     background-position: center 80%;
@@ -141,15 +143,50 @@
     transform: scale(1.1);
 }
 
-.image-wrapper {
+.profile-pic {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    height: 300px;
+    overflow: hidden;
+}
+
+.image-wrapper {
+    display: flex;
+    position: relative;
+    align-items: start;
+
+    /* width: 80%; */
+    max-width: 250px;
+    max-height: 300px;
+    border-radius: var(--about-profile-radius);
+    padding: 10px;
+
+    overflow: hidden;
 }
 
 .profile-img {
-    width: 85%;
-    max-width: 380px;
+    display: block;
+
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.img-border {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+    z-index: 2;
+
+    filter: sepia(24%) contrast(90%);
 
     border-radius: var(--about-profile-radius);
 }
@@ -169,9 +206,8 @@
         justify-content: center;
     }
 
-    .profile-img {
-        margin-top: 30px;
-        width: 70%;
+    .profile-pic {
+        height: auto;
     }
 
 }
