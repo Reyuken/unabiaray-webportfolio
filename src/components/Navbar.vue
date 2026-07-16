@@ -14,8 +14,10 @@ const closeMenu = () => {
   <header class="navbar-wrapper">
     <nav class="navbar">
       <div class="container">
-
-        <a class="brand" href="#landing">RAY UNABIA</a>
+        <div class="brand-wrapper">
+          <div class="status-light"></div>
+          <a class="brand" href="#landing">RAY UNABIA</a>
+        </div>
 
         <button class="toggle-btn" @click="isOpen = !isOpen">
           <span></span>
@@ -68,6 +70,13 @@ const closeMenu = () => {
   min-height: 72px;
 }
 
+.brand-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .brand {
   color: var(--theme-color);
   text-decoration: none;
@@ -114,6 +123,46 @@ const closeMenu = () => {
   height: 2px;
   background: var(--theme-color-2);
   transition: 0.2s ease;
+}
+
+.status-light {
+  width: 14px;
+  height: 14px;
+
+  border-radius: 50%;
+
+  background: #38ff5c;
+  border: 1px solid #8cff9d;
+
+  box-shadow:
+    0 0 6px rgba(56, 255, 92, .8),
+    0 0 12px rgba(56, 255, 92, .6),
+    0 0 24px rgba(56, 255, 92, .35);
+
+  animation: pulseGreen 2.5s ease-in-out infinite;
+}
+
+@keyframes pulseGreen {
+
+  0%,
+  100% {
+    opacity: .45;
+    filter: brightness(.7);
+
+    box-shadow:
+      0 0 4px rgba(56, 255, 92, .4),
+      0 0 8px rgba(56, 255, 92, .25);
+  }
+
+  50% {
+    opacity: 1;
+    filter: brightness(1.3);
+
+    box-shadow:
+      0 0 8px rgba(56, 255, 92, .9),
+      0 0 18px rgba(56, 255, 92, .7),
+      0 0 36px rgba(56, 255, 92, .45);
+  }
 }
 
 @media (max-width: 768px) {

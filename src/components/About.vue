@@ -63,7 +63,7 @@
 
     display: flex;
     align-items: center;
-    padding-top: 30px;
+    padding: 30px 0;
 
     background-size: cover;
     background-position: center 80%;
