@@ -31,10 +31,10 @@
                         <a href="https://linkedin.com/in/ray-unabia-ba135a281/" target="_blank">
                             <img src="/img/LinkedIn Circled.png" alt="LinkedIn">
                         </a>
-
+<!-- 
                         <a href="https://twitter.com/" target="_blank">
                             <img src="/img/twt2.png" alt="Twitter">
-                        </a>
+                        </a> -->
 
                         <a href="https://github.com/Reyuken" target="_blank">
                             <img src="/img/GitHub.png" alt="GitHub">
