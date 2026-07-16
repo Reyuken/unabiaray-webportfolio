@@ -8,7 +8,7 @@ const selectedProject = ref(null)
 const showPreview = ref(false)
 
 const showAll = ref(false)
-const currentIndex = ref(1)
+const currentIndex = ref(0)
 
 // layout constants (must match the CSS values below)
 const cardWidth = 300
