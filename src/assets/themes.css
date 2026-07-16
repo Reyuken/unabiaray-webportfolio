@@ -1,33 +1,192 @@
 .app.mechanical {
-    --navbar-wrapper-font-family: "IBM Plex Mono", monospace;
+    --theme-color: #B78A54;
+    --theme-color-2: #E4E0D5;
+
+    font-family: "IBM Plex Mono", monospace;
+
+    background: linear-gradient(to bottom,
+
+            #101215 0%,
+            #101215 64%,
+            #101215 100%);
+    color: #E4E0D5;
+
     --navbar-bg: #101215;
-    --nav-links-a-color: #E4E0D5;
     --navbar-border: #9CA8AA;
-    --nav-links-hover: #B78A54;
-    --brand-color: #B78A54;
 
-    background: #101215;
-    color: #5F4B66;
-
-    --about-name-font-family: "IBM Plex Mono", monospace;
-    --about-text: #E4E0D5;
     --about-role: #9CA8AA;
-    --about-name: #E4E0D5;
-    --about-name-highlight: #B78A54;
     --about-description: #B7BFC0;
-    --about-button-text: #101215;
-    --about-button-bg: linear-gradient(90deg,
+
+    --button-text: #101215;
+    --button-bg: linear-gradient(90deg,
             #7B5B34 0%,
             #B78A54 50%,
             #E1C08A 100%);
-    --about-button-hover: linear-gradient(135deg,
+    --button-hover: linear-gradient(135deg,
             #f2f4f5 0%,
             #c8ced3 20%,
             #9ea6ad 50%,
             #d9dde0 80%,
             #f7f8f9 100%);
+    --button-border: #D6B27A;
+
     --about-profile-radius: 2px;
     --about-social-filter: grayscale(100%) brightness(.9);
+
+    /* PROJECT CARD */
+    --carousel-shadow-gradient: linear-gradient(90deg,
+            transparent,
+            rgba(183, 138, 84, 0.15),
+            rgba(183, 138, 84, 0.55),
+            rgba(183, 138, 84, 0.15),
+            transparent);
+    --carousel-dot-bg: #5A6468;
+
+    --carousel-arrow-bg: #2B3034;
+    --carousel-arrow-border: #5A6468;
+
+
+
+    --carousel-arrow-hover-border: #D6B27A;
+    --carousel-arrow-hover-color: #101215;
+
+    --projects-toggle-bg: #2B3034;
+    --projects-toggle-border: #5A6468;
+
+    --projects-toggle-hover-border: #D6B27A;
+    --projects-toggle-hover-text: #101215;
+
+    --project-card-bg: linear-gradient(180deg,
+            #2A2E33 0%,
+            #1C1F23 25%,
+            #121417 50%,
+            #1C1F23 75%,
+            #2A2E33 100%);
+
+    --project-card-border: #5A6468;
+
+
+    --project-card-radius: 4px;
+
+    --project-card-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .08),
+        inset 0 -1px 0 rgba(0, 0, 0, .55),
+        0 10px 25px rgba(0, 0, 0, .35);
+
+    --project-card-hover-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .12),
+        0 18px 40px rgba(0, 0, 0, .45),
+        0 0 0 1px rgba(183, 138, 84, .25);
+
+
+    --project-text-color: #B7BFC0;
+
+    --project-image-bg: #15181B;
+    --project-image-border: #5A6468;
+    --project-image-radius: 3px;
+
+    --project-image-filter: grayscale(20%) contrast(1.05);
+    --project-image-filter-hover: grayscale(0%) contrast(1.1);
+
+    --project-badge-bg: linear-gradient(180deg,
+            #D2AE74,
+            #B78A54);
+    --project-badge-text: #101215;
+    --project-badge-border: #D8C095;
+    --project-badge-radius: 2px;
+    --project-badge-shadow: 0 2px 8px rgba(0, 0, 0, .35);
+    --tools-description: #AEB5B8;
+    --tool-card-bg:
+        linear-gradient(180deg,
+            #2A2E33,
+            #1C1F23 30%,
+            #121417 70%,
+            #2A2E33);
+
+    --tool-card-border: #5A6468;
+    --tool-card-radius: 4px;
+    --tool-card-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .08),
+        inset 0 -1px 0 rgba(0, 0, 0, .55),
+        0 10px 20px rgba(0, 0, 0, .35);
+
+    --tool-card-hover-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .12),
+        0 16px 32px rgba(0, 0, 0, .45);
+
+
+
+    --tool-card-text: #D9D6CE;
+
+    --tool-icon-filter:
+        grayscale(.2) contrast(1.05);
+
+    --tool-icon-filter-hover:
+        grayscale(0) contrast(1.15) brightness(1.08);
+
+    --tool-icon-bg: linear-gradient(180deg,
+            #767e86,
+            #1A1D20);
+
+    --tool-icon-hover-bg: linear-gradient(180deg,
+            #6c757c,
+            #22262A);
+
+    --tool-icon-border: #5A6468;
+    --tools-container-bg:
+        linear-gradient(180deg,
+            #2D3136 0%,
+            #202428 25%,
+            #171A1D 50%,
+            #202428 75%,
+            #2D3136 100%);
+
+    --tools-container-border: #5A6468;
+
+    --tools-container-radius: 6px;
+
+    --tools-container-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .08),
+        inset 0 -1px 0 rgba(0, 0, 0, .45),
+        0 20px 40px rgba(0, 0, 0, .35);
+
+    --contact-description: #B7BFC0;
+    --contact-panel-bg: linear-gradient(180deg,
+            #2D3136 0%,
+            #202428 25%,
+            #171A1D 50%,
+            #202428 75%,
+            #2D3136 100%);
+    --contact-panel-border: #5A6468;
+
+    --contact-map-border: #5A6468;
+
+    --contact-input-bg: #1C1E22;
+    --contact-input-border: #5A6468;
+    --contact-input-placeholder: #7E888A;
+
+    /* ==========================
+   FOOTER
+========================== */
+
+    --footer-border: #5A6468;
+    --footer-brand-hover: #D3A46A;
+    --footer-text: #B7BFC0;
+    --footer-divider: #444C50;
+    --footer-link: #E4E0D5;
+    --footer-email: #E4E0D5;
+
+    --footer-social-filter: grayscale(100%) brightness(.95);
+    --footer-social-filter-hover: grayscale(0%) brightness(1.1);
+
+    --footer-icon-border: #5A6468;
+    --footer-panel-bg: linear-gradient(180deg,
+            #2D3136 0%,
+            #202428 25%,
+            #171A1D 50%,
+            #202428 75%,
+            #2D3136 100%);
+
 }
 
 .app.cute {
