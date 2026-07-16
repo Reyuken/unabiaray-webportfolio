@@ -51,7 +51,6 @@ const closeMenu = () => {
   background: var(--navbar-bg);
   border-bottom: 1px solid var(--navbar-border);
 
-  font-family: var(--navbar-wrapper-font-family);
   font-size: 16px;
   font-weight: 500;
 }
@@ -70,7 +69,7 @@ const closeMenu = () => {
 }
 
 .brand {
-  color: var(--brand-color);
+  color: var(--theme-color);
   text-decoration: none;
   transition: 0.2s ease;
 }
@@ -90,13 +89,13 @@ const closeMenu = () => {
 }
 
 .nav-links a {
-  color: var(--nav-links-a-color);
+  color: var(--theme-color-2);
   text-decoration: none;
   transition: 0.2s ease;
 }
 
 .nav-links a:hover {
-  color: var(--nav-links-hover);
+  color: var(--theme-color);
 }
 
 .toggle-btn {
@@ -113,7 +112,7 @@ const closeMenu = () => {
 .toggle-btn span {
   width: 24px;
   height: 2px;
-  background: var(--nav-links-a-color);
+  background: var(--theme-color-2);
   transition: 0.2s ease;
 }
 

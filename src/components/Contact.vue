@@ -207,20 +207,22 @@ onMounted(() => {
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 15px;
+    color: var(--theme-color);
 }
 
 .description {
     font-size: 16px;
-    color: #555;
+    color: var(--contact-description);
     margin-bottom: 20px;
     line-height: 1.6;
 }
 
 .map-container {
-    width: 100%;
-    border-radius: 12px;
+    border: 1px solid var(--contact-map-border);
+    border-radius: 4px;
     overflow: hidden;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    box-shadow:
+        0 0 12px rgba(0, 0, 0, .35);
 }
 
 .map-container iframe {
@@ -232,6 +234,10 @@ onMounted(() => {
 .contact-form-wrapper {
     display: flex;
     flex-direction: column;
+    padding: 30px;
+    background: var(--contact-panel-bg);
+    border: 1px solid var(--contact-panel-border);
+    border-radius: 4px;
 }
 
 .contact-form {
@@ -242,35 +248,52 @@ onMounted(() => {
 
 input,
 textarea {
-    background: #FEF4F2;
-    width: 100%;
-    padding: 12px 14px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    font-size: 14px;
-    outline: none;
+    background: var(--contact-input-bg);
+
+    border: 1px solid var(--contact-input-border);
+    border-radius: 2px;
+    transition:
+        border-color .25s,
+        box-shadow .25s;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--contact-input-placeholder);
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--theme-color);
+    box-shadow:
+        0 0 0 2px rgba(183, 138, 84, .18);
 }
 
 textarea {
     resize: none;
 }
 
-button {
-    width: 200px;
-    background: #F87474;
-    border: 1px solid #F87474;
-    border-radius: 20px;
-    color: white;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 41px;
-    cursor: pointer;
-    transition: 0.2s ease;
+button{
+    width:200px;
+    background:var(--button-bg);
+    border:1px solid var(--button-border);
+    color:var(--button-text);
+    border-radius:2px;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    transition:
+        background .25s,
+        transform .25s,
+        box-shadow .25s;
 }
 
 
-button:hover {
-    transform: translateY(-2px);
+button:hover{
+    background:var(--button-hover);
+    color:var(--button-text);
+    transform:translateY(-2px);
+    box-shadow:
+        0 0 14px rgba(183,138,84,.35);
 }
 
 button:disabled {

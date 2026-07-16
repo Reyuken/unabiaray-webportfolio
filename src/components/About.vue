@@ -48,10 +48,7 @@
                 </div>
 
                 <div class="col-12 col-md-6 image-wrapper">
-                    <img
-                        src="/img/myImage2.png"
-                        alt="Profile"
-                        class="profile-img">
+                    <img src="/img/myImage2.png" alt="Profile" class="profile-img">
                 </div>
 
             </div>
@@ -70,7 +67,7 @@
     background-position: center 80%;
     background-repeat: no-repeat;
 
-    color: var(--about-text);
+
 }
 
 .text-content {
@@ -87,15 +84,15 @@
 }
 
 .name {
-    font-family: var(--about-name-font-family);
+
     font-size: 44px;
     font-weight: 700;
     margin-bottom: 18px;
-    color: var(--about-name);
+
 }
 
 .name span {
-    color: var(--about-name-highlight);
+    color: var(--theme-color);
 }
 
 .description {
@@ -107,25 +104,21 @@
 
 .cta-btn {
     display: inline-block;
-
     font-size: 14px;
     font-weight: 500;
     line-height: 3.2rem;
-
-    color: var(--about-button-text);
+    color: var(--button-text);
     text-decoration: none;
-
-    background: var(--about-button-bg);
-
+    background: var(--button-bg);
     padding: 0 20px;
-
+    border: 1px solid var(--button-border);
     border-radius: var(--about-profile-radius);
 
     transition: .3s;
 }
 
 .cta-btn:hover {
-    background: var(--about-button-hover);
+    background: var(--button-hover);
 }
 
 .social-media {
@@ -161,24 +154,24 @@
     border-radius: var(--about-profile-radius);
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    .about-section{
-        text-align:center;
-        padding:80px 20px;
+    .about-section {
+        text-align: center;
+        padding: 80px 20px;
     }
 
-    .name{
-        font-size:34px;
+    .name {
+        font-size: 34px;
     }
 
-    .social-media{
-        justify-content:center;
+    .social-media {
+        justify-content: center;
     }
 
-    .profile-img{
-        margin-top:30px;
-        width:70%;
+    .profile-img {
+        margin-top: 30px;
+        width: 70%;
     }
 
 }
