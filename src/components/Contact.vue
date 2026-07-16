@@ -235,7 +235,7 @@ onMounted(() => {
     display: flex;
     flex-direction: column;
     padding: 30px;
-    background: var(--contact-panel-bg);
+    background: var(--panel-bg);
     border: 1px solid var(--contact-panel-border);
     border-radius: 4px;
 }

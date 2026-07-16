@@ -85,7 +85,7 @@ const tools = {
 .container-fluid {
     max-width: 1100px;
     margin: auto;
-    background: var(--tools-container-bg);
+    background: var(--panel-bg);
     border: 1px solid var(--tools-container-border);
     border-radius: var(--tools-container-radius);
     padding: 3rem;

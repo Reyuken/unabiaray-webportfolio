@@ -11,6 +11,14 @@
             #101215 100%);
     color: #E4E0D5;
 
+    --panel-bg:
+        linear-gradient(180deg,
+            #2D3136 0%,
+            #202428 25%,
+            #171A1D 50%,
+            #202428 75%,
+            #2D3136 100%);
+
     --navbar-bg: #101215;
     --navbar-border: #9CA8AA;
 
@@ -133,13 +141,6 @@
             #22262A);
 
     --tool-icon-border: #5A6468;
-    --tools-container-bg:
-        linear-gradient(180deg,
-            #2D3136 0%,
-            #202428 25%,
-            #171A1D 50%,
-            #202428 75%,
-            #2D3136 100%);
 
     --tools-container-border: #5A6468;
 
@@ -151,12 +152,7 @@
         0 20px 40px rgba(0, 0, 0, .35);
 
     --contact-description: #B7BFC0;
-    --contact-panel-bg: linear-gradient(180deg,
-            #2D3136 0%,
-            #202428 25%,
-            #171A1D 50%,
-            #202428 75%,
-            #2D3136 100%);
+
     --contact-panel-border: #5A6468;
 
     --contact-map-border: #5A6468;
@@ -165,9 +161,6 @@
     --contact-input-border: #5A6468;
     --contact-input-placeholder: #7E888A;
 
-    /* ==========================
-   FOOTER
-========================== */
 
     --footer-border: #5A6468;
     --footer-brand-hover: #D3A46A;
@@ -180,36 +173,178 @@
     --footer-social-filter-hover: grayscale(0%) brightness(1.1);
 
     --footer-icon-border: #5A6468;
-    --footer-panel-bg: linear-gradient(180deg,
-            #2D3136 0%,
-            #202428 25%,
-            #171A1D 50%,
-            #202428 75%,
-            #2D3136 100%);
 
 }
 
 .app.cute {
-    background: #FFE8F2;
-    color: #5F4B66;
+    --theme-color: #FF8FB8;
+    --theme-color-2: #FFF7FB;
 
+    font-family: "Poppins", sans-serif;
 
-    --about-name-font-family: 'Satisfy', cursive;
-    --about-text: #ffffff;
-    --about-role: #000000;
-    --about-name: #000000;
-    --about-name-highlight: #f26c4f;
-    --about-description: #000000;
-    --about-button-text: #ffffff;
-    --about-button-bg: linear-gradient(90deg, #5a4ff2 0%, #414eff 81%);
-    --about-button-hover: linear-gradient(90deg,
-            rgba(79, 1, 1, 1) 0%,
-            rgba(242, 79, 79, 1) 81%);
+    background: linear-gradient(to bottom,
+            #FFF8FC 0%,
+            #FFF3FA 50%,
+            #FFEFF8 100%);
 
-    --about-profile-radius: 12px;
+    color: #5F4B57;
+
+    --navbar-bg: rgba(255, 255, 255, .85);
+    --navbar-border: #FFD4E4;
+
+    --about-role: #D36D9A;
+    --about-description: #7A6A74;
+
+    --button-text: white;
+
+    --button-bg: linear-gradient(135deg,
+            #FF8FB8,
+            #FFA7CC);
+
+    --button-hover: linear-gradient(135deg,
+            #FFA7CC,
+            #FF8FB8);
+
+    --button-border: #FFB8D4;
+
+    --about-profile-radius: 30px;
 
     --about-social-filter: none;
 
+    /* PROJECTS */
+
+    --carousel-shadow-gradient:
+        linear-gradient(90deg,
+            transparent,
+            rgba(255, 143, 184, .15),
+            rgba(255, 143, 184, .45),
+            rgba(255, 143, 184, .15),
+            transparent);
+
+    --carousel-dot-bg: #FFD2E5;
+
+    --carousel-arrow-bg: white;
+    --carousel-arrow-border: #FFD6E6;
+
+    --carousel-arrow-hover-border: #FF8FB8;
+    --carousel-arrow-hover-color: white;
+
+    --projects-toggle-bg: white;
+    --projects-toggle-border: #FFD6E6;
+
+    --projects-toggle-hover-border: #FF8FB8;
+    --projects-toggle-hover-text: white;
+
+    --project-card-bg:
+        linear-gradient(180deg,
+            #FFFFFF,
+            #FFF8FC);
+
+    --project-card-border: #FFE0EB;
+
+    --project-card-radius: 24px;
+
+    --project-card-shadow:
+        0 10px 30px rgba(255, 143, 184, .12);
+
+    --project-card-hover-shadow:
+        0 18px 40px rgba(255, 143, 184, .20);
+
+    --project-text-color: #6E5A65;
+
+    --project-image-bg: #FFF4F9;
+    --project-image-border: #FFD6E6;
+    --project-image-radius: 18px;
+
+    --project-image-filter: none;
+    --project-image-filter-hover: none;
+
+    --project-badge-bg:
+        linear-gradient(135deg,
+            #FF8FB8,
+            #FFA7CC);
+
+    --project-badge-text: white;
+    --project-badge-border: #FFC9DC;
+    --project-badge-radius: 999px;
+    --project-badge-shadow:
+        0 4px 12px rgba(255, 143, 184, .2);
+
+    /* TOOLS */
+
+    --tools-description: #7A6A74;
+
+    --tool-card-bg:
+        linear-gradient(180deg,
+            #FFFFFF,
+            #FFF8FC);
+
+    --tool-card-border: #FFE0EB;
+    --tool-card-radius: 22px;
+
+    --tool-card-shadow:
+        0 10px 25px rgba(255, 143, 184, .12);
+
+    --tool-card-hover-shadow:
+        0 18px 35px rgba(255, 143, 184, .18);
+
+    --tool-card-text: #5F4B57;
+
+    --tool-icon-filter: none;
+    --tool-icon-filter-hover: none;
+
+    --tool-icon-bg:
+        linear-gradient(180deg,
+            #FFEAF3,
+            #FFD6E6);
+
+    --tool-icon-hover-bg:
+        linear-gradient(180deg,
+            #FFD6E6,
+            #FFC2DA);
+
+    --tool-icon-border: #FFD6E6;
+
+    --tools-container-border: #FFE0EB;
+    --tools-container-radius: 24px;
+
+    --tools-container-shadow:
+        0 15px 40px rgba(255, 143, 184, .10);
+
+
+    --contact-description: #7A6A74;
+
+    --contact-panel-border: #FFE0EB;
+
+    --contact-map-border: #FFD6E6;
+
+    --contact-input-bg: white;
+    --contact-input-border: #FFD6E6;
+    --contact-input-placeholder: #B38FA2;
+
+    /* FOOTER */
+
+    --footer-border: #FFE0EB;
+
+    --footer-brand-hover: #FF6EA8;
+
+    --footer-text: #7A6A74;
+
+    --footer-divider: #FFE0EB;
+
+    --footer-link: #5F4B57;
+
+    --footer-email: #5F4B57;
+
+    --footer-social-filter: none;
+    --footer-social-filter-hover: none;
+
+    --footer-icon-border: #FFD6E6;
+
+    --footer-panel-bg:
+        linear-gradient(180deg,
+            #FFFFFF,
+            #FFF8FC);
 }
 
 .app.hacker {

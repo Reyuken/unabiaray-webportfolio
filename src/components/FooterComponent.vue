@@ -26,7 +26,7 @@
 
 <style scoped>
 .footer-section {
-    background: var(--footer-panel-bg);
+    background: var(--panel-bg);
     border-top: 1px solid var(--footer-border);
     
     padding: 20px 20px;
