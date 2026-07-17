@@ -23,7 +23,8 @@
     --navbar-border: #9CA8AA;
 
 
-
+    --status-light-size: 14px;
+    --status-light-radius: 50%;
     --status-light-bg: #38ff5c;
     --status-light-border: 1px solid #8cff9d;
 
@@ -33,8 +34,12 @@
         0 0 24px rgba(56, 255, 92, .35);
 
     --status-light-animation: pulse 2.5s ease-in-out infinite;
+    --profile-img-animation: autoReveal 3s ease-in-out infinite;
 
     --profile-border: url("/img/mechanicalTheme/mechanical-border.png");
+
+    --profile-pic-width: 250px;
+    --profile-pic-height: 300px;
     --about-role: #9CA8AA;
     --about-description: #B7BFC0;
 
@@ -179,6 +184,34 @@
 
     --footer-icon-border: #5A6468;
 
+    --back-to-top-bg: #2B3034;
+
+    --back-to-top-border: 1px solid #5A6468;
+
+    --back-to-top-radius: 50px;
+
+    --back-to-top-size: 50px;
+
+    --back-to-top-right: 25px;
+    --back-to-top-bottom: 50px;
+
+    --back-to-top-font-size: 25px;
+
+    --back-to-top-arrow-color: #B78A54;
+    --back-to-top-arrow-inner-color: #2B3034;
+
+    --back-to-top-arrow-radius: 20px;
+
+    --back-to-top-shadow:
+        0 2px 10px rgba(0, 0, 0, .35),
+        0 0 15px rgba(183, 138, 84, .25);
+
+    --back-to-top-active-shadow:
+        0 4px 15px rgba(0, 0, 0, .45);
+
+    --back-to-top-transition:
+        all .3s ease-in-out;
+
 }
 
 .app.cute {
@@ -215,9 +248,13 @@
         0 0 24px rgba(255, 143, 184, .35);
 
     --status-light-animation: pulse 2.5s ease-in-out infinite;
+    --profile-img-animation: cuteReveal 3s ease-in-out infinite;
 
-    --profile-border: url("/img/cuteTheme/cute-border.png");
+    --profile-border: url("/img/cuteTheme/cute-border-shark.png");
 
+    --profile-img-zindex: 3;
+    --profile-pic-width: 100px;
+    --profile-pic-height: 300px;
     --about-role: #C57BA4;
     --about-description: #766878;
 
@@ -237,7 +274,7 @@
 
     --button-border: #FFC9DE;
 
-    --about-profile-radius: 28px;
+    --about-profile-radius: 100px;
 
     --about-social-filter: none;
 
@@ -381,6 +418,34 @@
     --footer-social-filter-hover: brightness(1.08);
 
     --footer-icon-border: #FFD3E6;
+
+    --back-to-top-bg: #fff0f6;
+
+    --back-to-top-border: 1px solid #ff9ecb;
+
+    --back-to-top-radius: 50px;
+
+    --back-to-top-size: 50px;
+
+    --back-to-top-right: 25px;
+    --back-to-top-bottom: 50px;
+
+    --back-to-top-font-size: 25px;
+
+    --back-to-top-arrow-color: #ff6fae;
+    --back-to-top-arrow-inner-color: #fff0f6;
+
+    --back-to-top-arrow-radius: 20px;
+
+    --back-to-top-shadow:
+        0 4px 12px rgba(255, 105, 180, .25),
+        0 0 20px rgba(255, 182, 193, .35);
+
+    --back-to-top-active-shadow:
+        0 6px 18px rgba(255, 105, 180, .35);
+
+    --back-to-top-transition:
+        all .3s ease-in-out;
 }
 
 .app.hacker {
@@ -404,7 +469,8 @@
 
     --profile-border: url("/img/hackerTheme/hacker-border.png");
 
-
+    --profile-pic-width: 250px;
+    --profile-pic-height: 300px;
     --status-light-size: 14px;
     --status-light-radius: 50%;
     --status-light-bg: #00ff66;
@@ -416,6 +482,7 @@
 
 
     --status-light-animation: pulse 2.5s ease-in-out infinite;
+    --profile-img-animation: hackerGlitch 3.5s ease-in-out infinite;
 
     --button-bg: linear-gradient(90deg, #00b84d, #00ff66);
     --button-hover: linear-gradient(90deg, #00ff66, #33ff85);
@@ -436,6 +503,35 @@
 
     --footer-border: #1f6d46;
     --footer-text: #8cd8aa;
+
+    --back-to-top-bg: #061006;
+
+    --back-to-top-border: 1px solid #00ff66;
+
+    --back-to-top-arrow-color: #00ff66;
+    --back-to-top-arrow-inner-color: #061006;
+
+    --back-to-top-shadow:
+        0 0 8px rgba(0, 255, 102, .8),
+        0 0 20px rgba(0, 255, 102, .4);
+
+    --back-to-top-active-shadow:
+        0 0 25px rgba(0, 255, 102, .8);
+
+    --back-to-top-radius: 50px;
+
+    --back-to-top-size: 50px;
+
+    --back-to-top-right: 25px;
+    --back-to-top-bottom: 50px;
+
+    --back-to-top-font-size: 25px;
+
+    --back-to-top-arrow-radius: 20px;
+
+    --back-to-top-transition:
+        all .3s ease-in-out;
+
 }
 
 .app.professional {
@@ -460,6 +556,8 @@
 
     --profile-border: url("/img/professionalTheme/pro-border.png");
 
+    --profile-pic-width: 250px;
+    --profile-pic-height: 300px;
     --status-light-size: 14px;
     --status-light-radius: 50%;
     --status-light-bg: #00b7ff;
@@ -509,6 +607,35 @@
 
     --footer-border: #d9e1ec;
     --footer-text: #6b7280;
+
+    --back-to-top-bg: #ffffff;
+
+    --back-to-top-border: 1px solid #d1d5db;
+
+    --back-to-top-radius: 50px;
+
+    --back-to-top-size: 50px;
+
+    --back-to-top-right: 25px;
+    --back-to-top-bottom: 50px;
+
+    --back-to-top-font-size: 25px;
+
+    --back-to-top-arrow-color: #2563eb;
+    --back-to-top-arrow-inner-color: #ffffff;
+
+    --back-to-top-arrow-radius: 20px;
+
+    --back-to-top-shadow:
+        0 4px 12px rgba(0, 0, 0, .12),
+        0 0 15px rgba(37, 99, 235, .15);
+
+    --back-to-top-active-shadow:
+        0 6px 18px rgba(0, 0, 0, .18);
+
+    --back-to-top-transition:
+        all .3s ease-in-out;
+
 }
 
 @keyframes pulse {
@@ -525,5 +652,96 @@
     100% {
         transform: scale(1);
         opacity: .65;
+    }
+}
+
+@keyframes autoReveal {
+
+    0%,
+    60% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    75% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes cuteReveal {
+
+    0% {
+        opacity: 1;
+        transform: translateY(100px);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    75% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(100px);
+    }
+}
+
+@keyframes hackerGlitch {
+
+    0% {
+        filter: none;
+        transform: translate(0);
+    }
+
+    10% {
+        transform: translate(3px, 0);
+        filter:
+            hue-rotate(90deg) contrast(1.5);
+    }
+
+    20% {
+        transform: translate(-3px, 0);
+        filter:
+            hue-rotate(180deg) contrast(2);
+    }
+
+    30% {
+        transform: translate(5px, 0);
+    }
+
+    40% {
+        transform: translate(-5px, 0);
+    }
+
+    50% {
+        transform: translate(0);
+        filter:
+            hue-rotate(360deg) contrast(1.2);
+    }
+
+    70% {
+        filter: none;
+        transform: translate(0);
+    }
+
+    100% {
+        filter: none;
+        transform: translate(0);
     }
 }
