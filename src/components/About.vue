@@ -47,7 +47,10 @@
                 <div class="col-8 col-md-3 profile-pic">
                     <div class="image-wrapper">
                         <!-- <img src="/img/mechanicalTheme/mechanical-border.png" alt="border" class="img-border"> -->
-                        <img src="/img/myImage2.png" alt="Profile" class="profile-img">
+                        <!-- <img src="/img/myImage2.png" alt="Profile" class="profile-img"> -->
+                        <div class="profile-pic-wrapper">
+                            <div class="profile-img"></div>
+                        </div>
                     </div>
                 </div>
 
@@ -154,25 +157,42 @@
 }
 
 .image-wrapper {
-    display: flex;
 
-    align-items: start;
-
-    max-width: var(--profile-pic-width);
-    max-height: var(--profile-pic-height);
-
-    padding: 10px;
-
-    /* border-radius: var(--about-profile-radius); */
+    width: min(100%, var(--profile-pic-width));
+    aspect-ratio: 5 / 6;
 
     overflow: hidden;
+}
+
+.profile-pic-wrapper {
+    position: relative;
+    height: var(--profile-pic-height);
+    
+    overflow: hidden;
+}
+
+.profile-img {
+    
+    width: var(--profile-pic-percent);
+    height: 100%;
+
+    background-image: var(--profile-image);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    border-radius: var(--about-profile-radius);
+    margin: auto;
+
+    animation: var(--profile-img-animation);
+
+    z-index: var(--profile-img-zindex);
 }
 
 .image-wrapper::after {
     content: "";
 
-    position: absolute;
-    inset: 0;
+    transform: var(--image-move-down);
 
     background-image: var(--profile-border);
     background-repeat: no-repeat;
@@ -183,21 +203,10 @@
     z-index: 2;
 }
 
-.profile-img {
-    display: block;
-
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-
-    margin-top: 20px;
-    border-radius: var(--about-profile-radius);
-
-    animation: var(--profile-img-animation);
-
-    transform: translateY(20px);
-
-    z-index: var(--profile-img-zindex);
+.profile-img,
+.image-wrapper::after {
+    position: absolute;
+    inset: 0;
 }
 
 .image-wrapper:hover .profile-img {

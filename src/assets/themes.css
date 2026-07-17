@@ -37,9 +37,12 @@
     --profile-img-animation: autoReveal 3s ease-in-out infinite;
 
     --profile-border: url("/img/mechanicalTheme/mechanical-border.png");
+    --profile-image: url("/img/mechanicalTheme/cartoonProfile.png");
 
     --profile-pic-width: 250px;
-    --profile-pic-height: 300px;
+    --profile-pic-height: 100%;
+    --profile-pic-percent: 90%;
+
     --about-role: #9CA8AA;
     --about-description: #B7BFC0;
 
@@ -251,10 +254,15 @@
     --profile-img-animation: cuteReveal 3s ease-in-out infinite;
 
     --profile-border: url("/img/cuteTheme/cute-border-shark.png");
+    --profile-image: url("/img/cuteTheme/jump-water-profile.png");
 
     --profile-img-zindex: 3;
-    --profile-pic-width: 100px;
-    --profile-pic-height: 300px;
+    --profile-pic-width: 250px;
+    --profile-pic-height: 200px;
+    --profile-pic-percent: 70%;
+
+    --image-move-down: translateY(3px);
+
     --about-role: #C57BA4;
     --about-description: #766878;
 
@@ -274,7 +282,7 @@
 
     --button-border: #FFC9DE;
 
-    --about-profile-radius: 100px;
+    --about-profile-radius: 20px;
 
     --about-social-filter: none;
 
@@ -449,76 +457,242 @@
 }
 
 .app.hacker {
-    --theme-color: #00ff66;
-    --theme-color-2: #d7ffe5;
+    --theme-color: #00FF88;
+    --theme-color-2: #C8FFE6;
 
-    font-family: "JetBrains Mono", monospace;
+    font-family: "IBM Plex Mono", monospace;
 
-    background: #050806;
-    color: #d7ffe5;
+    background: linear-gradient(to bottom,
+            #050806 0%,
+            #07110C 60%,
+            #030504 100%);
 
-    --panel-bg: linear-gradient(180deg,
-            #111614,
-            #0a0f0d);
+    color: #C8FFE6;
 
-    --navbar-bg: rgba(5, 8, 6, .95);
-    --navbar-border: #1f6d46;
+    --panel-bg:
+        linear-gradient(180deg,
+            #0A1510 0%,
+            #07110C 45%,
+            #050806 100%);
 
-    --navbar-text: #d7ffe5;
-    --navbar-text-hover: #00ff66;
+    --navbar-bg: rgba(3, 12, 7, .92);
+    --navbar-border: #00AA55;
 
-    --profile-border: url("/img/hackerTheme/hacker-border.png");
+    /* STATUS */
 
-    --profile-pic-width: 250px;
-    --profile-pic-height: 300px;
     --status-light-size: 14px;
     --status-light-radius: 50%;
-    --status-light-bg: #00ff66;
-    --status-light-border: 1px solid #72ffb0;
+
+    --status-light-bg: #00FF66;
+    --status-light-border: 1px solid #8DFFC0;
 
     --status-light-shadow:
-        0 0 8px #00ff66,
-        0 0 18px rgba(0, 255, 102, .5);
-
+        0 0 6px rgba(0, 255, 102, .8),
+        0 0 12px rgba(0, 255, 102, .6),
+        0 0 24px rgba(0, 255, 102, .35);
 
     --status-light-animation: pulse 2.5s ease-in-out infinite;
-    --profile-img-animation: hackerGlitch 3.5s ease-in-out infinite;
 
-    --button-bg: linear-gradient(90deg, #00b84d, #00ff66);
-    --button-hover: linear-gradient(90deg, #00ff66, #33ff85);
-    --button-text: #050806;
+    /* PROFILE */
 
-    --project-card-bg: linear-gradient(180deg, #121916, #0d110f);
-    --project-card-border: #1f6d46;
+    --profile-img-animation: hackerGlitch 3s ease-in-out infinite;
+
+    --profile-border: url("/img/hackerTheme/hacker-border.png");
+    --profile-image: url("/img/mechanicalTheme/cartoonProfile.png");
+
+    --profile-img-zindex: 3;
+
+    --profile-pic-width: 250px;
+    --profile-pic-height: 200px;
+    --profile-pic-percent: 70%;
+
+    --image-move-down: translateY(0);
+
+    /* ABOUT */
+
+    --about-role: #00D46A;
+    --about-description: #8BCDAA;
+
+    --about-profile-radius: 6px;
+
+    --about-social-filter:
+        brightness(.9) hue-rotate(55deg) saturate(1.2);
+
+    /* BUTTONS */
+
+    --button-text: #021108;
+
+    --button-bg:
+        linear-gradient(90deg,
+            #006633,
+            #00C96B,
+            #00FF88);
+
+    --button-hover:
+        linear-gradient(90deg,
+            #00AA55,
+            #00FF88,
+            #7DFFB5);
+
+    --button-border: #00FF88;
+
+    /* PROJECT */
+
+    --carousel-shadow-gradient:
+        linear-gradient(90deg,
+            transparent,
+            rgba(0, 255, 136, .15),
+            rgba(0, 255, 136, .50),
+            rgba(0, 255, 136, .15),
+            transparent);
+
+    --carousel-dot-bg: #006B3A;
+
+    --carousel-arrow-bg: #08110C;
+    --carousel-arrow-border: #00AA55;
+
+    --carousel-arrow-hover-border: #00FF88;
+    --carousel-arrow-hover-color: #021108;
+
+    --projects-toggle-bg: #08110C;
+    --projects-toggle-border: #00AA55;
+
+    --projects-toggle-hover-border: #00FF88;
+    --projects-toggle-hover-text: #021108;
+
+    --project-card-bg:
+        linear-gradient(180deg,
+            #0C1812,
+            #08110C,
+            #050806);
+
+    --project-card-border: #00AA55;
 
     --project-card-radius: 6px;
 
-    --project-text-color: #bfffd8;
+    --project-card-shadow:
+        0 12px 30px rgba(0, 0, 0, .45),
+        inset 0 0 0 1px rgba(0, 255, 136, .08);
 
-    --tool-card-bg: linear-gradient(180deg, #121916, #0d110f);
-    --tool-card-border: #1f6d46;
+    --project-card-hover-shadow:
+        0 18px 40px rgba(0, 255, 136, .18),
+        0 0 18px rgba(0, 255, 136, .22);
 
-    --contact-input-bg: #0d110f;
-    --contact-input-border: #1f6d46;
+    --project-text-color: #B6FFD8;
 
-    --footer-border: #1f6d46;
-    --footer-text: #8cd8aa;
+    --project-image-bg: #030705;
+    --project-image-border: #00AA55;
+    --project-image-radius: 4px;
 
-    --back-to-top-bg: #061006;
+    --project-image-filter:
+        brightness(.9) contrast(1.05);
 
-    --back-to-top-border: 1px solid #00ff66;
+    --project-image-filter-hover:
+        brightness(1) contrast(1.1);
 
-    --back-to-top-arrow-color: #00ff66;
-    --back-to-top-arrow-inner-color: #061006;
+    --project-badge-bg:
+        linear-gradient(180deg,
+            #00FF88,
+            #00B85E);
 
-    --back-to-top-shadow:
-        0 0 8px rgba(0, 255, 102, .8),
-        0 0 20px rgba(0, 255, 102, .4);
+    --project-badge-text: #021108;
 
-    --back-to-top-active-shadow:
-        0 0 25px rgba(0, 255, 102, .8);
+    --project-badge-border: #66FFC2;
 
-    --back-to-top-radius: 50px;
+    --project-badge-radius: 4px;
+
+    --project-badge-shadow:
+        0 4px 12px rgba(0, 255, 136, .28);
+
+    /* TOOLS */
+
+    --tools-description: #8BCDAA;
+
+    --tool-card-bg:
+        linear-gradient(180deg,
+            #0C1812,
+            #08110C);
+
+    --tool-card-border: #00AA55;
+
+    --tool-card-radius: 6px;
+
+    --tool-card-shadow:
+        0 10px 24px rgba(0, 0, 0, .4);
+
+    --tool-card-hover-shadow:
+        0 18px 34px rgba(0, 255, 136, .16);
+
+    --tool-card-text: #C8FFE6;
+
+    --tool-icon-filter:
+        brightness(.95) hue-rotate(50deg);
+
+    --tool-icon-filter-hover:
+        brightness(1.15) hue-rotate(50deg);
+
+    --tool-icon-bg:
+        linear-gradient(180deg,
+            #0E2419,
+            #07110C);
+
+    --tool-icon-hover-bg:
+        linear-gradient(180deg,
+            #14482F,
+            #0A1510);
+
+    --tool-icon-border: #00AA55;
+
+    --tools-container-border: #00AA55;
+
+    --tools-container-radius: 8px;
+
+    --tools-container-shadow:
+        0 15px 40px rgba(0, 255, 136, .10);
+
+    /* CONTACT */
+
+    --contact-description: #8BCDAA;
+
+    --contact-panel-border: #00AA55;
+
+    --contact-map-border: #00AA55;
+
+    --contact-input-bg: #08110C;
+
+    --contact-input-border: #00AA55;
+
+    --contact-input-placeholder: #4F8D68;
+
+    /* FOOTER */
+
+    --footer-border: #00AA55;
+
+    --footer-brand-hover: #66FFC2;
+
+    --footer-text: #8BCDAA;
+
+    --footer-divider: #0E3A24;
+
+    --footer-link: #C8FFE6;
+
+    --footer-email: #C8FFE6;
+
+    --footer-social-filter:
+        brightness(.9) hue-rotate(50deg);
+
+    --footer-social-filter-hover:
+        brightness(1.15) hue-rotate(50deg);
+
+    --footer-icon-border: #00AA55;
+
+    /* BACK TO TOP */
+
+    --back-to-top-bg: #08110C;
+
+    --back-to-top-border: 1px solid #00FF88;
+
+    --back-to-top-radius: 6px;
 
     --back-to-top-size: 50px;
 
@@ -527,90 +701,248 @@
 
     --back-to-top-font-size: 25px;
 
-    --back-to-top-arrow-radius: 20px;
+    --back-to-top-arrow-color: #00FF88;
+    --back-to-top-arrow-inner-color: #08110C;
+
+    --back-to-top-arrow-radius: 4px;
+
+    --back-to-top-shadow:
+        0 0 12px rgba(0, 255, 136, .25),
+        0 0 24px rgba(0, 255, 136, .15);
+
+    --back-to-top-active-shadow:
+        0 0 18px rgba(0, 255, 136, .45);
 
     --back-to-top-transition:
         all .3s ease-in-out;
-
 }
 
 .app.professional {
-
-    --theme-color: #2563eb;
-    --theme-color-2: #1f2937;
+    --theme-color: #2563EB;
+    --theme-color-2: #F8FAFC;
 
     font-family: "Inter", sans-serif;
 
-    background: #f5f7fb;
-    color: #1f2937;
+    background: linear-gradient(to bottom,
+            #F8FAFC 0%,
+            #F1F5F9 60%,
+            #E2E8F0 100%);
 
-    --panel-bg: linear-gradient(180deg,
-            #ffffff,
-            #f8fafc);
+    color: #1E293B;
 
-    --navbar-bg: rgba(255, 255, 255, .9);
-    --navbar-border: #d9e1ec;
+    --panel-bg:
+        linear-gradient(180deg,
+            #FFFFFF 0%,
+            #F8FAFC 45%,
+            #EEF2F7 100%);
 
-    --navbar-text: #374151;
-    --navbar-text-hover: #2563eb;
+    --navbar-bg: rgba(255, 255, 255, .90);
+    --navbar-border: #CBD5E1;
 
-    --profile-border: url("/img/professionalTheme/pro-border.png");
+    /* STATUS */
 
-    --profile-pic-width: 250px;
-    --profile-pic-height: 300px;
     --status-light-size: 14px;
     --status-light-radius: 50%;
-    --status-light-bg: #00b7ff;
-    --status-light-border: 1px solid #6bd3ec;
+
+    --status-light-bg: #38BDF8;
+    --status-light-border: 1px solid #BAE6FD;
 
     --status-light-shadow:
-        0 0 8px rgba(42, 46, 253, 0.4);
+        0 0 4px rgba(56, 189, 248, .45),
+        0 0 10px rgba(56, 189, 248, .25),
+        0 0 18px rgba(56, 189, 248, .12);
 
     --status-light-animation: pulse 2.5s ease-in-out infinite;
 
-    --button-bg: linear-gradient(90deg,
-            #2563eb,
-            #3b82f6);
+    /* PROFILE */
 
-    --button-hover: linear-gradient(90deg,
-            #3b82f6,
-            #60a5fa);
+    --profile-img-animation: none;
 
-    --button-text: white;
+    --profile-border: url("/img/professionalTheme/professional-border.png");
+    --profile-image: url("/img/mechanicalTheme/cartoonProfile.png");
+
+    --profile-img-zindex: 3;
+
+    --profile-pic-width: 250px;
+    --profile-pic-height: 300px;
+    --profile-pic-percent: 80%;
+
+    --image-move-down: translateY(0);
+
+    /* ABOUT */
+
+    --about-role: #2563EB;
+    --about-description: #475569;
+
+    --about-profile-radius: 18px;
+
+    --about-social-filter: none;
+
+    /* BUTTONS */
+
+    --button-text: #FFFFFF;
+
+    --button-bg:
+        linear-gradient(90deg,
+            #1D4ED8,
+            #2563EB,
+            #3B82F6);
+
+    --button-hover:
+        linear-gradient(90deg,
+            #2563EB,
+            #3B82F6,
+            #60A5FA);
+
+    --button-border: #93C5FD;
+
+    /* PROJECT */
+
+    --carousel-shadow-gradient:
+        linear-gradient(90deg,
+            transparent,
+            rgba(37, 99, 235, .08),
+            rgba(37, 99, 235, .22),
+            rgba(37, 99, 235, .08),
+            transparent);
+
+    --carousel-dot-bg: #CBD5E1;
+
+    --carousel-arrow-bg: #FFFFFF;
+    --carousel-arrow-border: #CBD5E1;
+
+    --carousel-arrow-hover-border: #2563EB;
+    --carousel-arrow-hover-color: #FFFFFF;
+
+    --projects-toggle-bg: #FFFFFF;
+    --projects-toggle-border: #CBD5E1;
+
+    --projects-toggle-hover-border: #2563EB;
+    --projects-toggle-hover-text: #FFFFFF;
 
     --project-card-bg:
         linear-gradient(180deg,
-            white,
-            #f8fafc);
+            #FFFFFF,
+            #F8FAFC,
+            #EEF2F7);
 
-    --project-card-border: #d9e1ec;
+    --project-card-border: #CBD5E1;
 
     --project-card-radius: 14px;
 
     --project-card-shadow:
-        0 12px 25px rgba(15, 23, 42, .08);
+        0 8px 24px rgba(15, 23, 42, .08);
 
     --project-card-hover-shadow:
-        0 18px 35px rgba(15, 23, 42, .15);
+        0 14px 36px rgba(15, 23, 42, .14);
 
-    --project-text-color: #4b5563;
+    --project-text-color: #475569;
+
+    --project-image-bg: #F8FAFC;
+    --project-image-border: #CBD5E1;
+    --project-image-radius: 12px;
+
+    --project-image-filter: none;
+    --project-image-filter-hover: none;
+
+    --project-badge-bg:
+        linear-gradient(180deg,
+            #60A5FA,
+            #2563EB);
+
+    --project-badge-text: #FFFFFF;
+
+    --project-badge-border: #BFDBFE;
+
+    --project-badge-radius: 999px;
+
+    --project-badge-shadow:
+        0 4px 10px rgba(37, 99, 235, .15);
+
+    /* TOOLS */
+
+    --tools-description: #64748B;
 
     --tool-card-bg:
         linear-gradient(180deg,
-            white,
-            #f8fafc);
+            #FFFFFF,
+            #F8FAFC);
 
-    --tool-card-border: #d9e1ec;
+    --tool-card-border: #CBD5E1;
 
-    --contact-input-bg: white;
-    --contact-input-border: #d9e1ec;
+    --tool-card-radius: 14px;
 
-    --footer-border: #d9e1ec;
-    --footer-text: #6b7280;
+    --tool-card-shadow:
+        0 8px 22px rgba(15, 23, 42, .08);
 
-    --back-to-top-bg: #ffffff;
+    --tool-card-hover-shadow:
+        0 14px 32px rgba(15, 23, 42, .12);
 
-    --back-to-top-border: 1px solid #d1d5db;
+    --tool-card-text: #334155;
+
+    --tool-icon-filter: none;
+
+    --tool-icon-filter-hover: none;
+
+    --tool-icon-bg:
+        linear-gradient(180deg,
+            #F8FAFC,
+            #E2E8F0);
+
+    --tool-icon-hover-bg:
+        linear-gradient(180deg,
+            #EEF2F7,
+            #DCE5EF);
+
+    --tool-icon-border: #CBD5E1;
+
+    --tools-container-border: #CBD5E1;
+
+    --tools-container-radius: 16px;
+
+    --tools-container-shadow:
+        0 14px 36px rgba(15, 23, 42, .08);
+
+    /* CONTACT */
+
+    --contact-description: #64748B;
+
+    --contact-panel-border: #CBD5E1;
+
+    --contact-map-border: #CBD5E1;
+
+    --contact-input-bg: #FFFFFF;
+
+    --contact-input-border: #CBD5E1;
+
+    --contact-input-placeholder: #94A3B8;
+
+    /* FOOTER */
+
+    --footer-border: #CBD5E1;
+
+    --footer-brand-hover: #2563EB;
+
+    --footer-text: #64748B;
+
+    --footer-divider: #E2E8F0;
+
+    --footer-link: #334155;
+
+    --footer-email: #334155;
+
+    --footer-social-filter: none;
+
+    --footer-social-filter-hover:
+        brightness(1.08);
+
+    --footer-icon-border: #CBD5E1;
+
+    /* BACK TO TOP */
+
+    --back-to-top-bg: #FFFFFF;
+
+    --back-to-top-border: 1px solid #CBD5E1;
 
     --back-to-top-radius: 50px;
 
@@ -621,21 +953,19 @@
 
     --back-to-top-font-size: 25px;
 
-    --back-to-top-arrow-color: #2563eb;
-    --back-to-top-arrow-inner-color: #ffffff;
+    --back-to-top-arrow-color: #2563EB;
+    --back-to-top-arrow-inner-color: #FFFFFF;
 
     --back-to-top-arrow-radius: 20px;
 
     --back-to-top-shadow:
-        0 4px 12px rgba(0, 0, 0, .12),
-        0 0 15px rgba(37, 99, 235, .15);
+        0 6px 16px rgba(15, 23, 42, .12);
 
     --back-to-top-active-shadow:
-        0 6px 18px rgba(0, 0, 0, .18);
+        0 10px 22px rgba(15, 23, 42, .18);
 
     --back-to-top-transition:
         all .3s ease-in-out;
-
 }
 
 @keyframes pulse {

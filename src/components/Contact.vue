@@ -250,6 +250,7 @@ input,
 textarea {
     background: var(--contact-input-bg);
 
+    padding: 3px 10px;
     border: 1px solid var(--contact-input-border);
     border-radius: 2px;
     transition:
