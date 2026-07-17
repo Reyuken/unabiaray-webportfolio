@@ -31,7 +31,7 @@
                         <a href="https://linkedin.com/in/ray-unabia-ba135a281/" target="_blank">
                             <img src="/img/LinkedIn Circled.png" alt="LinkedIn">
                         </a>
-<!-- 
+                        <!-- 
                         <a href="https://twitter.com/" target="_blank">
                             <img src="/img/twt2.png" alt="Twitter">
                         </a> -->
@@ -46,7 +46,7 @@
 
                 <div class="col-8 col-md-3 profile-pic">
                     <div class="image-wrapper">
-                        <img src="/img/mechanicalTheme/mechanical-border.png" alt="border" class="img-border">
+                        <!-- <img src="/img/mechanicalTheme/mechanical-border.png" alt="border" class="img-border"> -->
                         <img src="/img/myImage2.png" alt="Profile" class="profile-img">
                     </div>
                 </div>
@@ -145,6 +145,7 @@
 
 .profile-pic {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
 
@@ -154,16 +155,33 @@
 
 .image-wrapper {
     display: flex;
-    position: relative;
+
     align-items: start;
 
-    /* width: 80%; */
+    /* width: 100%; */
     max-width: 250px;
     max-height: 300px;
-    border-radius: var(--about-profile-radius);
+
     padding: 10px;
 
+    border-radius: var(--about-profile-radius);
+
     overflow: hidden;
+}
+
+.image-wrapper::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image: var(--profile-border);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    pointer-events: none;
+    z-index: 2;
 }
 
 .profile-img {
@@ -175,7 +193,7 @@
     margin-top: 20px;
 }
 
-.img-border {
+/* .img-border {
     position: absolute;
 
     inset: 0;
@@ -189,7 +207,7 @@
     filter: sepia(24%) contrast(90%);
 
     border-radius: var(--about-profile-radius);
-}
+} */
 
 @media (max-width:768px) {
 

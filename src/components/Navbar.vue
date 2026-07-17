@@ -98,7 +98,7 @@ const closeMenu = () => {
 }
 
 .nav-links a {
-  color: var(--theme-color-2);
+  color: var(--color);
   text-decoration: none;
   transition: 0.2s ease;
 }
@@ -126,43 +126,17 @@ const closeMenu = () => {
 }
 
 .status-light {
-  width: 14px;
-  height: 14px;
+  width: var(--status-light-size);
+  height: var(--status-light-size);
 
-  border-radius: 50%;
+  border-radius: var(--status-light-radius);
 
-  background: #38ff5c;
-  border: 1px solid #8cff9d;
+  background: var(--status-light-bg);
+  border: var(--status-light-border);
 
-  box-shadow:
-    0 0 6px rgba(56, 255, 92, .8),
-    0 0 12px rgba(56, 255, 92, .6),
-    0 0 24px rgba(56, 255, 92, .35);
+  box-shadow: var(--status-light-shadow);
 
-  animation: pulseGreen 2.5s ease-in-out infinite;
-}
-
-@keyframes pulseGreen {
-
-  0%,
-  100% {
-    opacity: .45;
-    filter: brightness(.7);
-
-    box-shadow:
-      0 0 4px rgba(56, 255, 92, .4),
-      0 0 8px rgba(56, 255, 92, .25);
-  }
-
-  50% {
-    opacity: 1;
-    filter: brightness(1.3);
-
-    box-shadow:
-      0 0 8px rgba(56, 255, 92, .9),
-      0 0 18px rgba(56, 255, 92, .7),
-      0 0 36px rgba(56, 255, 92, .45);
-  }
+  animation: var(--status-light-animation);
 }
 
 @media (max-width: 768px) {

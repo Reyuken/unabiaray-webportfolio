@@ -22,6 +22,19 @@
     --navbar-bg: #101215;
     --navbar-border: #9CA8AA;
 
+
+
+    --status-light-bg: #38ff5c;
+    --status-light-border: 1px solid #8cff9d;
+
+    --status-light-shadow:
+        0 0 6px rgba(56, 255, 92, .8),
+        0 0 12px rgba(56, 255, 92, .6),
+        0 0 24px rgba(56, 255, 92, .35);
+
+    --status-light-animation: pulse 2.5s ease-in-out infinite;
+
+    --profile-border: url("/img/mechanicalTheme/mechanical-border.png");
     --about-role: #9CA8AA;
     --about-description: #B7BFC0;
 
@@ -76,13 +89,11 @@
 
     --project-card-radius: 4px;
 
-    --project-card-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, .08),
+    --project-card-shadow: inset 0 1px 0 rgba(255, 255, 255, .08),
         inset 0 -1px 0 rgba(0, 0, 0, .55),
         0 10px 25px rgba(0, 0, 0, .35);
 
-    --project-card-hover-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, .12),
+    --project-card-hover-shadow: inset 0 1px 0 rgba(255, 255, 255, .12),
         0 18px 40px rgba(0, 0, 0, .45),
         0 0 0 1px rgba(183, 138, 84, .25);
 
@@ -104,8 +115,7 @@
     --project-badge-radius: 2px;
     --project-badge-shadow: 0 2px 8px rgba(0, 0, 0, .35);
     --tools-description: #AEB5B8;
-    --tool-card-bg:
-        linear-gradient(180deg,
+    --tool-card-bg: linear-gradient(180deg,
             #2A2E33,
             #1C1F23 30%,
             #121417 70%,
@@ -113,24 +123,20 @@
 
     --tool-card-border: #5A6468;
     --tool-card-radius: 4px;
-    --tool-card-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, .08),
+    --tool-card-shadow: inset 0 1px 0 rgba(255, 255, 255, .08),
         inset 0 -1px 0 rgba(0, 0, 0, .55),
         0 10px 20px rgba(0, 0, 0, .35);
 
-    --tool-card-hover-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, .12),
+    --tool-card-hover-shadow: inset 0 1px 0 rgba(255, 255, 255, .12),
         0 16px 32px rgba(0, 0, 0, .45);
 
 
 
     --tool-card-text: #D9D6CE;
 
-    --tool-icon-filter:
-        grayscale(.2) contrast(1.05);
+    --tool-icon-filter: grayscale(.2) contrast(1.05);
 
-    --tool-icon-filter-hover:
-        grayscale(0) contrast(1.15) brightness(1.08);
+    --tool-icon-filter-hover: grayscale(0) contrast(1.15) brightness(1.08);
 
     --tool-icon-bg: linear-gradient(180deg,
             #767e86,
@@ -146,8 +152,7 @@
 
     --tools-container-radius: 6px;
 
-    --tools-container-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, .08),
+    --tools-container-shadow: inset 0 1px 0 rgba(255, 255, 255, .08),
         inset 0 -1px 0 rgba(0, 0, 0, .45),
         0 20px 40px rgba(0, 0, 0, .35);
 
@@ -177,182 +182,348 @@
 }
 
 .app.cute {
-    --theme-color: #FF8FB8;
-    --theme-color-2: #FFF7FB;
+    --theme-color: #FF7FB2;
+    --theme-color-2: #FFF8FC;
 
-    font-family: "Poppins", sans-serif;
+    font-family: "Quicksand", sans-serif;
 
     background: linear-gradient(to bottom,
-            #FFF8FC 0%,
-            #FFF3FA 50%,
-            #FFEFF8 100%);
+            #FFF7FB 0%,
+            #FFF0F8 60%,
+            #FFE9F5 100%);
 
-    color: #5F4B57;
+    color: #5C5166;
 
-    --navbar-bg: rgba(255, 255, 255, .85);
-    --navbar-border: #FFD4E4;
+    --panel-bg:
+        linear-gradient(180deg,
+            #FFFFFF 0%,
+            #FFF5FB 40%,
+            #FFEAF6 100%);
 
-    --about-role: #D36D9A;
-    --about-description: #7A6A74;
+    --navbar-bg: rgba(255, 255, 255, 0.9);
+    --navbar-border: #FFD3E6;
+
+    --status-light-size: 14px;
+    --status-light-radius: 50%;
+
+    --status-light-bg: #FF8FB8;
+    --status-light-border: 1px solid #FFD2E4;
+
+    --status-light-shadow:
+        0 0 6px rgba(255, 143, 184, .8),
+        0 0 12px rgba(255, 143, 184, .6),
+        0 0 24px rgba(255, 143, 184, .35);
+
+    --status-light-animation: pulse 2.5s ease-in-out infinite;
+
+    --profile-border: url("/img/cuteTheme/cute-border.png");
+
+    --about-role: #C57BA4;
+    --about-description: #766878;
 
     --button-text: white;
 
-    --button-bg: linear-gradient(135deg,
-            #FF8FB8,
-            #FFA7CC);
+    --button-bg:
+        linear-gradient(90deg,
+            #FF9CC6,
+            #FF7FB2,
+            #FF5F9F);
 
-    --button-hover: linear-gradient(135deg,
-            #FFA7CC,
-            #FF8FB8);
+    --button-hover:
+        linear-gradient(90deg,
+            #FFB6D5,
+            #FF90BE,
+            #FF74AE);
 
-    --button-border: #FFB8D4;
+    --button-border: #FFC9DE;
 
-    --about-profile-radius: 30px;
+    --about-profile-radius: 28px;
 
     --about-social-filter: none;
 
-    /* PROJECTS */
+    /* PROJECT */
 
     --carousel-shadow-gradient:
         linear-gradient(90deg,
             transparent,
-            rgba(255, 143, 184, .15),
-            rgba(255, 143, 184, .45),
-            rgba(255, 143, 184, .15),
+            rgba(255, 127, 178, .15),
+            rgba(255, 127, 178, .45),
+            rgba(255, 127, 178, .15),
             transparent);
 
-    --carousel-dot-bg: #FFD2E5;
+    --carousel-dot-bg: #F6B4D0;
 
-    --carousel-arrow-bg: white;
-    --carousel-arrow-border: #FFD6E6;
+    --carousel-arrow-bg: #FFFFFF;
+    --carousel-arrow-border: #FFD3E6;
 
-    --carousel-arrow-hover-border: #FF8FB8;
+    --carousel-arrow-hover-border: #FF7FB2;
     --carousel-arrow-hover-color: white;
 
     --projects-toggle-bg: white;
-    --projects-toggle-border: #FFD6E6;
+    --projects-toggle-border: #FFD3E6;
 
-    --projects-toggle-hover-border: #FF8FB8;
+    --projects-toggle-hover-border: #FF7FB2;
     --projects-toggle-hover-text: white;
 
     --project-card-bg:
         linear-gradient(180deg,
             #FFFFFF,
-            #FFF8FC);
+            #FFF7FB,
+            #FFEFF8);
 
-    --project-card-border: #FFE0EB;
+    --project-card-border: #FFD3E6;
 
-    --project-card-radius: 24px;
+    --project-card-radius: 18px;
 
     --project-card-shadow:
-        0 10px 30px rgba(255, 143, 184, .12);
+        0 12px 30px rgba(255, 127, 178, .15);
 
     --project-card-hover-shadow:
-        0 18px 40px rgba(255, 143, 184, .20);
+        0 18px 40px rgba(255, 127, 178, .25);
 
-    --project-text-color: #6E5A65;
+    --project-text-color: #665C69;
 
-    --project-image-bg: #FFF4F9;
-    --project-image-border: #FFD6E6;
-    --project-image-radius: 18px;
+    --project-image-bg: #FFF5FA;
+    --project-image-border: #FFD3E6;
+    --project-image-radius: 14px;
 
     --project-image-filter: none;
     --project-image-filter-hover: none;
 
     --project-badge-bg:
-        linear-gradient(135deg,
-            #FF8FB8,
-            #FFA7CC);
+        linear-gradient(180deg,
+            #FFC5DE,
+            #FF8FB8);
 
     --project-badge-text: white;
-    --project-badge-border: #FFC9DC;
+
+    --project-badge-border: #FFD6E7;
+
     --project-badge-radius: 999px;
+
     --project-badge-shadow:
-        0 4px 12px rgba(255, 143, 184, .2);
+        0 5px 15px rgba(255, 127, 178, .25);
 
     /* TOOLS */
 
-    --tools-description: #7A6A74;
+    --tools-description: #766878;
 
     --tool-card-bg:
         linear-gradient(180deg,
             #FFFFFF,
-            #FFF8FC);
+            #FFF7FB);
 
-    --tool-card-border: #FFE0EB;
-    --tool-card-radius: 22px;
+    --tool-card-border: #FFD3E6;
+
+    --tool-card-radius: 18px;
 
     --tool-card-shadow:
-        0 10px 25px rgba(255, 143, 184, .12);
+        0 10px 24px rgba(255, 127, 178, .12);
 
     --tool-card-hover-shadow:
-        0 18px 35px rgba(255, 143, 184, .18);
+        0 18px 34px rgba(255, 127, 178, .20);
 
-    --tool-card-text: #5F4B57;
+    --tool-card-text: #665C69;
 
     --tool-icon-filter: none;
+
     --tool-icon-filter-hover: none;
 
     --tool-icon-bg:
         linear-gradient(180deg,
-            #FFEAF3,
-            #FFD6E6);
+            #FFE2F0,
+            #FFD2E7);
 
     --tool-icon-hover-bg:
         linear-gradient(180deg,
-            #FFD6E6,
-            #FFC2DA);
+            #FFD2E7,
+            #FFC2DD);
 
-    --tool-icon-border: #FFD6E6;
+    --tool-icon-border: #FFD3E6;
 
-    --tools-container-border: #FFE0EB;
-    --tools-container-radius: 24px;
+    --tools-container-border: #FFD3E6;
+
+    --tools-container-radius: 20px;
 
     --tools-container-shadow:
-        0 15px 40px rgba(255, 143, 184, .10);
+        0 15px 40px rgba(255, 127, 178, .12);
 
+    /* CONTACT */
 
-    --contact-description: #7A6A74;
+    --contact-description: #766878;
 
-    --contact-panel-border: #FFE0EB;
+    --contact-panel-border: #FFD3E6;
 
-    --contact-map-border: #FFD6E6;
+    --contact-map-border: #FFD3E6;
 
     --contact-input-bg: white;
-    --contact-input-border: #FFD6E6;
-    --contact-input-placeholder: #B38FA2;
+
+    --contact-input-border: #FFD3E6;
+
+    --contact-input-placeholder: #B59DB0;
 
     /* FOOTER */
 
-    --footer-border: #FFE0EB;
+    --footer-border: #FFD3E6;
 
-    --footer-brand-hover: #FF6EA8;
+    --footer-brand-hover: #FF5F9F;
 
-    --footer-text: #7A6A74;
+    --footer-text: #766878;
 
-    --footer-divider: #FFE0EB;
+    --footer-divider: #FFD3E6;
 
-    --footer-link: #5F4B57;
+    --footer-link: #5C5166;
 
-    --footer-email: #5F4B57;
+    --footer-email: #5C5166;
 
     --footer-social-filter: none;
-    --footer-social-filter-hover: none;
 
-    --footer-icon-border: #FFD6E6;
+    --footer-social-filter-hover: brightness(1.08);
 
-    --footer-panel-bg:
-        linear-gradient(180deg,
-            #FFFFFF,
-            #FFF8FC);
+    --footer-icon-border: #FFD3E6;
 }
 
 .app.hacker {
-    background: #050505;
-    color: #00FF66;
+    --theme-color: #00ff66;
+    --theme-color-2: #d7ffe5;
+
+    font-family: "JetBrains Mono", monospace;
+
+    background: #050806;
+    color: #d7ffe5;
+
+    --panel-bg: linear-gradient(180deg,
+            #111614,
+            #0a0f0d);
+
+    --navbar-bg: rgba(5, 8, 6, .95);
+    --navbar-border: #1f6d46;
+
+    --navbar-text: #d7ffe5;
+    --navbar-text-hover: #00ff66;
+
+    --profile-border: url("/img/hackerTheme/hacker-border.png");
+
+
+    --status-light-size: 14px;
+    --status-light-radius: 50%;
+    --status-light-bg: #00ff66;
+    --status-light-border: 1px solid #72ffb0;
+
+    --status-light-shadow:
+        0 0 8px #00ff66,
+        0 0 18px rgba(0, 255, 102, .5);
+
+
+    --status-light-animation: pulse 2.5s ease-in-out infinite;
+
+    --button-bg: linear-gradient(90deg, #00b84d, #00ff66);
+    --button-hover: linear-gradient(90deg, #00ff66, #33ff85);
+    --button-text: #050806;
+
+    --project-card-bg: linear-gradient(180deg, #121916, #0d110f);
+    --project-card-border: #1f6d46;
+
+    --project-card-radius: 6px;
+
+    --project-text-color: #bfffd8;
+
+    --tool-card-bg: linear-gradient(180deg, #121916, #0d110f);
+    --tool-card-border: #1f6d46;
+
+    --contact-input-bg: #0d110f;
+    --contact-input-border: #1f6d46;
+
+    --footer-border: #1f6d46;
+    --footer-text: #8cd8aa;
 }
 
 .app.professional {
-    background: white;
-    color: #222;
+
+    --theme-color: #2563eb;
+    --theme-color-2: #1f2937;
+
+    font-family: "Inter", sans-serif;
+
+    background: #f5f7fb;
+    color: #1f2937;
+
+    --panel-bg: linear-gradient(180deg,
+            #ffffff,
+            #f8fafc);
+
+    --navbar-bg: rgba(255, 255, 255, .9);
+    --navbar-border: #d9e1ec;
+
+    --navbar-text: #374151;
+    --navbar-text-hover: #2563eb;
+
+    --profile-border: url("/img/professionalTheme/pro-border.png");
+
+    --status-light-size: 14px;
+    --status-light-radius: 50%;
+    --status-light-bg: #00b7ff;
+    --status-light-border: 1px solid #6bd3ec;
+
+    --status-light-shadow:
+        0 0 8px rgba(42, 46, 253, 0.4);
+
+    --status-light-animation: pulse 2.5s ease-in-out infinite;
+
+    --button-bg: linear-gradient(90deg,
+            #2563eb,
+            #3b82f6);
+
+    --button-hover: linear-gradient(90deg,
+            #3b82f6,
+            #60a5fa);
+
+    --button-text: white;
+
+    --project-card-bg:
+        linear-gradient(180deg,
+            white,
+            #f8fafc);
+
+    --project-card-border: #d9e1ec;
+
+    --project-card-radius: 14px;
+
+    --project-card-shadow:
+        0 12px 25px rgba(15, 23, 42, .08);
+
+    --project-card-hover-shadow:
+        0 18px 35px rgba(15, 23, 42, .15);
+
+    --project-text-color: #4b5563;
+
+    --tool-card-bg:
+        linear-gradient(180deg,
+            white,
+            #f8fafc);
+
+    --tool-card-border: #d9e1ec;
+
+    --contact-input-bg: white;
+    --contact-input-border: #d9e1ec;
+
+    --footer-border: #d9e1ec;
+    --footer-text: #6b7280;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: .65;
+    }
+
+    50% {
+        transform: scale(1.15);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: .65;
+    }
 }

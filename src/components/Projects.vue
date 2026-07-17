@@ -122,7 +122,10 @@ function toggleShowAll() {
 			</div>
 		</transition>
 	</section>
-	<PreviewCard v-if="showPreview" :project="selectedProject" @close="closePreview" />
+	<Transition name="preview">
+		<PreviewCard v-if="showPreview" :project="selectedProject" @close="closePreview" />
+	</Transition>
+
 </template>
 
 <style scoped>
@@ -222,7 +225,7 @@ function toggleShowAll() {
 .arrow-btn {
 	background: var(--carousel-arrow-bg);
 	border: 1px solid var(--carousel-arrow-border);
-	color: var(--theme-color-2);
+	color: var(--color);
 
 	border-radius: 50%;
 	width: 44px;
@@ -338,6 +341,25 @@ function toggleShowAll() {
 .expand-enter-from,
 .expand-leave-to {
 	opacity: 0;
+}
+
+.preview-enter-active,
+.preview-leave-active {
+	transition:
+		opacity .3s ease,
+		transform .3s ease;
+}
+
+.preview-enter-from,
+.preview-leave-to {
+	opacity: 0;
+	transform: scale(.92);
+}
+
+.preview-enter-to,
+.preview-leave-from {
+	opacity: 1;
+	transform: scale(1);
 }
 
 @media (max-width: 768px) {
