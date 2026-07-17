@@ -22,74 +22,97 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <button
-    class="back-to-top"
-    :class="{ backToTopShow: isVisible }"
-    @click="scrollToTop"
-  ></button>
+  <button class="back-to-top" :class="{ backToTopShow: isVisible }" @click="scrollToTop"></button>
 </template>
 
 <style scoped>
 .back-to-top {
   margin: 0;
   padding: 0;
-  background: #fff;
+
+  background: var(--back-to-top-bg);
+
   height: 0;
   width: 0;
+
   overflow: hidden;
-  border-radius: 50px;
+  border-radius: var(--back-to-top-radius);
+
   color: transparent;
   visibility: hidden;
+
   position: fixed;
   cursor: pointer;
+
   display: block;
-  border: none;
+
+  border: var(--back-to-top-border);
+
   right: 50px;
   bottom: 75px;
+
   font-size: 0;
+
   outline: none;
   z-index: 99;
-  transition: all 0.3s ease-in-out;
+
+  transition: var(--back-to-top-transition);
 }
+
 
 .back-to-top::before,
 .back-to-top::after {
   content: "";
+
   display: block;
-  border-bottom: solid 10px #ea5d5f;
+
+  border-bottom: solid 10px var(--back-to-top-arrow-color);
   border-left: solid 10px transparent;
   border-right: solid 10px transparent;
+
   height: 0;
   width: 0;
+
   margin: 18px auto 0;
-  border-radius: 20px;
+
+  border-radius: var(--back-to-top-arrow-radius);
+
   visibility: hidden;
 }
 
+
 .back-to-top::after {
-  border-bottom-color: #fff;
+  border-bottom-color: var(--back-to-top-arrow-inner-color);
+
   position: relative;
   top: -24px;
 }
 
-/* Vue class binding version of .back-to-top_show */
+
 .backToTopShow {
   visibility: visible;
-  height: 50px;
-  width: 50px;
-  right: 25px;
-  bottom: 50px;
-  font-size: 25px;
-  background: #fff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+  height: var(--back-to-top-size);
+  width: var(--back-to-top-size);
+
+  right: var(--back-to-top-right);
+  bottom: var(--back-to-top-bottom);
+
+  font-size: var(--back-to-top-font-size);
+
+  background: var(--back-to-top-bg);
+
+  box-shadow: var(--back-to-top-shadow);
 }
+
 
 .backToTopShow::before,
 .backToTopShow::after {
   visibility: visible;
 }
 
+
 .backToTopShow:active {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--back-to-top-active-shadow);
 }
 </style>

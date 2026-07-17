@@ -75,7 +75,6 @@ const tools = {
 
 <style scoped>
 .bg {
-    background: #f7f7f7;
     padding: 60px 0;
 }
 
@@ -86,17 +85,27 @@ const tools = {
 .container-fluid {
     max-width: 1100px;
     margin: auto;
+    background: var(--panel-bg);
+    border: 1px solid var(--tools-container-border);
+    border-radius: var(--tools-container-radius);
+    padding: 3rem;
+    box-shadow: var(--tools-container-shadow);
 }
 
 .skill-section h1 {
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 10px;
+    color: var(--theme-color);
+}
+
+.para {
+    color: var(--tools-description);
+    line-height: 1.8;
 }
 
 .tools-wrapper {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     gap: 20px;
     margin-top: 40px;
@@ -112,12 +121,13 @@ const tools = {
     text-align: center;
     margin-bottom: 20px;
     font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
 }
 
 .grid-2x2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
     gap: 15px;
     justify-items: center;
 }
@@ -125,31 +135,64 @@ const tools = {
 .tool-card {
     width: 140px;
     height: 140px;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: 0.2s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background: var(--tool-card-bg);
+    border: 1px solid var(--tool-card-border);
+    border-radius: var(--tool-card-radius);
+    box-shadow: var(--tool-card-shadow);
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
 }
 
 .tool-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-6px);
+    border-color: var(--theme-color);
+    box-shadow: var(--tool-card-hover-shadow);
 }
 
 .tool-card img {
+
     width: 50px;
     height: 50px;
     object-fit: contain;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    padding: 6px;
+    background: var(--tool-icon-bg);
+    border: 1px solid var(--tool-icon-border);
+    border-radius: 3px;
+    filter: var(--tool-icon-filter);
+    transition:
+        transform .3s ease,
+        filter .3s ease,
+        border-color .3s ease,
+        background .3s ease;
+}
+
+.tool-card:hover img {
+    transform: scale(1.08);
+    filter: var(--tool-icon-filter-hover);
+    border-color: var(--theme-color);
+    background: var(--tool-icon-hover-bg);
+}
+
+.tool-card:hover img {
+    transform: scale(1.08);
+    filter: var(--tool-icon-filter-hover);
+    border-color: var(--theme-color);
+    background: var(--tool-icon-hover-bg);
 }
 
 .tool-card p {
-    font-size: 16px;
     margin: 0;
+    font-size: .95rem;
     text-align: center;
+    color: var(--tool-card-text);
+    text-transform: uppercase;
+    letter-spacing: .06em;
 }
 </style>

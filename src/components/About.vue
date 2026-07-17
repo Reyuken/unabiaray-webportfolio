@@ -4,46 +4,51 @@
 <template>
     <section id="landing" class="about-section">
         <div class="container">
-            <div class="row align-items-center g-4">
+            <div class="row align-items-center justify-content-center g-4">
 
                 <div class="col-12 col-md-6 text-content">
-                    <p class="role">Full Stack Web Developer</p>
+                    <p class="role">
+                        Full Stack Web Developer
+                    </p>
 
                     <h1 class="name">
                         I'm <span>Ray P. Unabia</span>
                     </h1>
 
                     <p class="description">
-                        I'm a passionate Fullstack Web Developer with experience building responsive
-                        and dynamic web applications. I enjoy creating seamless user experiences,
-                        solving complex problems, and writing clean, maintainable code that makes both
-                        users and developers happy.
+                        I'm a Full-Stack Web Developer passionate about building responsive web applications with clean
+                        code and seamless user experiences.
                     </p>
 
                     <div class="cta-wrapper">
                         <a href="#contact" class="cta-btn">
-                            Let’s create an awesome website!
+                            Let's create an awesome website!
                         </a>
                     </div>
 
                     <div class="social-media">
-                        <a href="https://linkedin.com/in/ray-unabia-ba135a281/" target="linkedin.com/in/ray￾unabia-ba135a281
-">
-                            <img src="/img/LinkedIn Circled.png" alt="LinkedIn" />
-                        </a>
 
+                        <a href="https://linkedin.com/in/ray-unabia-ba135a281/" target="_blank">
+                            <img src="/img/LinkedIn Circled.png" alt="LinkedIn">
+                        </a>
+                        <!-- 
                         <a href="https://twitter.com/" target="_blank">
-                            <img src="/img/twt2.png" alt="Twitter" />
+                            <img src="/img/twt2.png" alt="Twitter">
+                        </a> -->
+
+                        <a href="https://github.com/Reyuken" target="_blank">
+                            <img src="/img/GitHub.png" alt="GitHub">
                         </a>
 
-                        <a href="https://github.com/Reyuken" target="https://github.com/Reyuken">
-                            <img src="/img/GitHub.png" alt="GitHub" />
-                        </a>
                     </div>
+
                 </div>
 
-                <div class="col-12 col-md-6 image-wrapper">
-                    <img src="/img/myImage2.png" alt="Profile" class="profile-img" />
+                <div class="col-8 col-md-3 profile-pic">
+                    <div class="image-wrapper">
+                        <!-- <img src="/img/mechanicalTheme/mechanical-border.png" alt="border" class="img-border"> -->
+                        <img src="/img/myImage2.png" alt="Profile" class="profile-img">
+                    </div>
                 </div>
 
             </div>
@@ -53,20 +58,18 @@
 
 <style scoped>
 .about-section {
-    min-height: 90vh;
+    /* min-height: 30vh; */
+    /* max-width: 1100px; */
+
     display: flex;
     align-items: center;
-    padding: 60px 0;
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)),
-        url("/img/beach.jpg");
+    padding: 30px 0;
 
     background-size: cover;
     background-position: center 80%;
     background-repeat: no-repeat;
 
-    color: white;
+
 }
 
 .text-content {
@@ -77,87 +80,153 @@
 
 .role {
     font-size: 27px;
-    color: #ddd;
+    color: var(--about-role);
     margin-bottom: 10px;
     letter-spacing: 1px;
 }
 
 .name {
-    font-family: 'Satisfy', cursive;
+
     font-size: 44px;
     font-weight: 700;
     margin-bottom: 18px;
-    color: rgb(0, 0, 0);
+
 }
 
 .name span {
-    color: #f26c4f;
+    color: var(--theme-color);
 }
 
 .description {
     font-size: 16px;
     line-height: 1.7;
-    color: #eaeaea;
+    color: var(--about-description);
     margin-bottom: 25px;
 }
 
 .cta-btn {
     display: inline-block;
-    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 3.2rem;
-
-    color: white;
+    color: var(--button-text);
     text-decoration: none;
+    background: var(--button-bg);
+    padding: 0 20px;
+    border: 1px solid var(--button-border);
+    border-radius: var(--about-profile-radius);
 
-    background: linear-gradient(90deg, #5a4ff2 0%, #414eff 81%);
-    padding: 0px 20px;
-    border-radius: 8px;
-
-    cursor: pointer;
-    transition: all 0.3s ease;
+    transition: .3s;
 }
 
 .cta-btn:hover {
-    background: linear-gradient(90deg,
-            rgba(79, 1, 1, 1) 0%,
-            rgba(242, 79, 79, 1) 81%) !important;
-
-    color: white;
-    font-weight: 500;
+    background: var(--button-hover);
 }
 
 .social-media {
     display: flex;
-    margin-top: 20px;
     gap: 15px;
     align-items: center;
+    margin-top: 20px;
 }
 
 .social-media img {
     width: 34px;
     height: 34px;
-    transition: 0.2s ease;
+
+    filter: var(--about-social-filter);
+
+    transition: .2s;
 }
 
 .social-media img:hover {
     transform: scale(1.1);
 }
 
-.image-wrapper {
+.profile-pic {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
+
+    height: 300px;
+    overflow: hidden;
+}
+
+.image-wrapper {
+    display: flex;
+
+    align-items: start;
+
+    max-width: var(--profile-pic-width);
+    max-height: var(--profile-pic-height);
+
+    padding: 10px;
+
+    /* border-radius: var(--about-profile-radius); */
+
+    overflow: hidden;
+}
+
+.image-wrapper::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image: var(--profile-border);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    pointer-events: none;
+    z-index: 2;
 }
 
 .profile-img {
-    width: 85%;
-    max-width: 380px;
-    border-radius: 12px;
+    display: block;
+
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+    margin-top: 20px;
+    border-radius: var(--about-profile-radius);
+
+    animation: var(--profile-img-animation);
+
+    transform: translateY(20px);
+
+    z-index: var(--profile-img-zindex);
 }
 
-@media (max-width: 768px) {
+.image-wrapper:hover .profile-img {
+
+    animation: none;
+
+    opacity: 1;
+
+}
+
+/* .img-border {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+    z-index: 2;
+
+    filter: sepia(24%) contrast(90%);
+
+    border-radius: var(--about-profile-radius);
+} */
+
+
+@media (max-width:768px) {
+
     .about-section {
         text-align: center;
         padding: 80px 20px;
@@ -171,9 +240,9 @@
         justify-content: center;
     }
 
-    .profile-img {
-        margin-top: 30px;
-        width: 70%;
+    .profile-pic {
+        height: auto;
     }
+
 }
 </style>
