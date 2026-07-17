@@ -18,7 +18,7 @@ const closeMenu = () => {
           <div class="status-light"></div>
           <a class="brand" href="#landing">RAY UNABIA</a>
         </div>
-
+        <ThemeSwitcher class="theme-switcher" />
         <button class="toggle-btn" @click="isOpen = !isOpen">
           <span></span>
           <span></span>
@@ -30,9 +30,6 @@ const closeMenu = () => {
           <li><a href="#projects" @click="closeMenu">Projects</a></li>
           <li><a href="#tools" @click="closeMenu">Tools</a></li>
           <li><a href="#contact" @click="closeMenu">Contact</a></li>
-          <li>
-            <ThemeSwitcher />
-          </li>
         </ul>
 
         <!-- <a class="cv-btn" href="/cv.pdf" download>
@@ -65,8 +62,6 @@ const closeMenu = () => {
 
 .container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   min-height: 72px;
 }
 
@@ -87,12 +82,16 @@ const closeMenu = () => {
   opacity: 0.8;
 }
 
+.theme-switcher {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
 .nav-links {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 25px;
-
-  list-style: none;
+  /* list-style: none; */
   margin: 0;
   padding: 0;
 }

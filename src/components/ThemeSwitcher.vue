@@ -19,3 +19,12 @@ const themeStore = useThemeStore()
     </div>
 
 </template>
+
+<style scoped>
+button {
+    font-size: 30px;
+
+    margin: 5px;
+
+}
+</style>
