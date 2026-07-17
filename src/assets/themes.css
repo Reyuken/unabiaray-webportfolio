@@ -25,13 +25,13 @@
 
     --status-light-size: 14px;
     --status-light-radius: 50%;
-    --status-light-bg: #38ff5c;
-    --status-light-border: 1px solid #8cff9d;
+    --status-light-bg: #ff3b3b;
+    --status-light-border: 1px solid #ff8c8c;
 
     --status-light-shadow:
-        0 0 6px rgba(56, 255, 92, .8),
-        0 0 12px rgba(56, 255, 92, .6),
-        0 0 24px rgba(56, 255, 92, .35);
+        0 0 6px rgba(255, 59, 59, .8),
+        0 0 12px rgba(255, 59, 59, .6),
+        0 0 24px rgba(255, 59, 59, .35);
 
     --status-light-animation: pulse 2.5s ease-in-out infinite;
     --profile-img-animation: autoReveal 3s ease-in-out infinite;
