@@ -73,6 +73,38 @@
     },
     {
         "id": 10,
+        "title": "Calculator",
+        "description": "Responsive calculator built with HTML, CSS, and JavaScript, supporting basic arithmetic operations, clear and backspace functions, and keyboard input.",
+        "image": "/unabiaray-webportfolio/img/calculator.jpg",
+        "link": "https://reyuken.github.io/project-calculator/",
+        "status": "live"
+    },
+    {
+        "id": 11,
+        "title": "Etch-A-Sketch",
+        "description": "Interactive drawing grid built with HTML, CSS, and JavaScript as part of The Odin Project, featuring adjustable grid sizes, color and erase modes, and interactive drawing.",
+        "image": "/unabiaray-webportfolio/img/etchsketch.jpg",
+        "link": "https://reyuken.github.io/project-etch-a-sketch/",
+        "status": "live"
+    },
+    {
+        "id": 12,
+        "title": "Tic Tac Toe",
+        "description": "Classic 3x3 two-player game built with HTML, CSS, and JavaScript, featuring win detection and game reset functionality.",
+        "image": "/unabiaray-webportfolio/img/tictactoe.jpg",
+        "link": "https://reyuken.github.io/project-tic-tac-toe/",
+        "status": "live"
+    },
+    {
+        "id": 13,
+        "title": "Weather App",
+        "description": "Responsive weather application built with HTML, CSS, and JavaScript as part of The Odin Project Fullstack course, using a Weather API to display current weather conditions and temperature based on city searches.",
+        "image": "/unabiaray-webportfolio/img/weatherapp.jpg",
+        "link": "https://reyuken.github.io/project-weather-app/",
+        "status": "live"
+    },
+    {
+        "id": 10,
         "title": "Course Booking API Documentation",
         "description": "RESTful API for managing course enrollments, featuring user registration, authentication, and course management. Publicly documented using Postman.",
         "image": "/unabiaray-webportfolio/img/Course Booking API Documentation.jpg",
