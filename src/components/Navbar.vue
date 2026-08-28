@@ -3,9 +3,14 @@ import { ref } from "vue";
 import ThemeSwitcher from "./ThemeSwitcher.vue";
 
 const isOpen = ref(false);
+const showThemeNotice = ref(true);
 
 const closeMenu = () => {
   isOpen.value = false;
+};
+
+const closeThemeNotice = () => {
+  showThemeNotice.value = false;
 };
 </script>
 
@@ -18,7 +23,19 @@ const closeMenu = () => {
           <div class="status-light"></div>
           <a class="brand" href="#landing">RAY UNABIA</a>
         </div>
-        <ThemeSwitcher class="theme-switcher" />
+        <div class="theme-wrapper">
+          <ThemeSwitcher/>
+
+          <div v-if="showThemeNotice" class="theme-notice">
+            <button class="notice-close" @click="closeThemeNotice">
+              ×
+            </button>
+
+            <div class="notice-arrow"></div>
+
+            <p>Choose your theme</p>
+          </div>
+        </div>
         <button class="toggle-btn" @click="isOpen = !isOpen">
           <span></span>
           <span></span>
@@ -82,10 +99,6 @@ const closeMenu = () => {
   opacity: 0.8;
 }
 
-.theme-switcher {
-  margin-left: auto;
-  margin-right: 30px;
-}
 
 .nav-links {
   display: flex;
@@ -162,6 +175,80 @@ const closeMenu = () => {
 
   .nav-links.open {
     display: flex;
+  }
+}
+
+.theme-wrapper {
+  position: relative;
+}
+
+.theme-notice {
+  position: absolute;
+  top: calc(100% + 15px);
+  right: 1;
+
+  background: rgba(207, 202, 125, 0.95);
+  color: #000000;
+
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  border-radius: 10px;
+
+  white-space: nowrap;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+
+  z-index: 1001;
+
+  animation: notice-float 0.3s ease-out;
+}
+
+.theme-notice p {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.notice-close {
+  position: absolute;
+  top: 4px;
+  right: 7px;
+
+  border: none;
+  background: none;
+
+  color: #000000;
+  font-size: 1.2rem;
+
+  cursor: pointer;
+  line-height: 1;
+}
+
+.notice-close:hover {
+  color: #fff;
+}
+
+.notice-arrow {
+  position: absolute;
+  top: -6px;
+  right: 20px;
+
+  width: 12px;
+  height: 12px;
+
+  background: rgba(207, 202, 125, 0.95);
+
+  transform: rotate(45deg);
+}
+
+@keyframes notice-float {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 </style>
