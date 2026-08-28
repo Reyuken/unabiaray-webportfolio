@@ -9,7 +9,7 @@ const emit = defineEmits(['close'])
 <template>
     <div class="overlay" @click.self="emit('close')">
         <div class="preview">
-            <button @click="emit('close')">
+            <button @click="emit('close')" class="close-btn">
                 ✕
             </button>
             <img :src="project.image">
@@ -60,7 +60,7 @@ img {
 .preview {
 
     max-width: 80vw;
-    max-height: 90vh;
+    /* max-height: 90vh; */
 
     overflow: auto;
 
@@ -118,5 +118,15 @@ img {
 
 .visit-btn:active {
     transform: translateY(0);
+}
+
+.close-btn {
+    padding: 7px 12px;
+
+    border: 1px solid var(--theme-color);
+    border-radius: 999px;
+
+    background: var(--button-bg);
+    color: var(--button-text);
 }
 </style>
