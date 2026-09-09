@@ -16,6 +16,8 @@ const tools = {
     backend: [
         { name: 'NodeJS', img: base + 'img/node-js.png' },
         { name: 'ExpressJS', img: base + 'img/expressjs.png' },
+        { name: 'Java', img: base + 'img/java.png' },
+        { name: 'Spring Boot', img: base + 'img/springboot.png' },
         { name: 'ASP.NET Core', img: base + 'img/aspnet.png' },
         { name: 'C#', img: base + 'img/csharp.png' },
         { name: 'REST APIs', img: base + 'img/api.png' },
@@ -38,6 +40,7 @@ const tools = {
     tools: [
         { name: 'Git', img: base + 'img/git (2).png' },
         { name: 'VS Code', img: base + 'img/vscode.png' },
+        { name: 'IntelliJ IDEA', img: base + 'img/intellij.png' },
         { name: 'JetBrains Rider', img: base + 'img/rider.png' },
         { name: 'Sublime Text', img: base + 'img/sublime.png' },
         { name: 'Trello', img: base + 'img/trello.png' },
@@ -45,6 +48,12 @@ const tools = {
         { name: 'Render', img: base + 'img/render.png' },
         { name: 'ChatGPT', img: base + 'img/chatgpt.png' },
         { name: 'Claude', img: base + 'img/claude.png' }
+    ],
+
+    design: [
+        { name: 'Figma', img: base + 'img/figma.png' },
+        { name: 'Canva', img: base + 'img/canva.png' },
+        { name: 'Photoshop', img: base + 'img/photoshop.png' }
     ]
 }
 </script>
@@ -120,6 +129,18 @@ const tools = {
                         <div v-for="tool in tools.tools" :key="tool.name" class="tool-card">
                             <img :src="tool.img" :alt="tool.name" />
                             <p>{{ tool.name }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design -->
+                <div class="tool-group">
+                    <h3>Design</h3>
+
+                    <div class="grid">
+                        <div v-for="design in tools.design" :key="design.name" class="tool-card">
+                            <img :src="design.img" :alt="design.name" />
+                            <p>{{ design.name }}</p>
                         </div>
                     </div>
                 </div>
