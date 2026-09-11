@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.vue';
 import About from './components/About.vue';
 import Projects from './components/Projects.vue';
 import Tools from './components/Tools.vue';
+import Certificates from './components/Certificates.vue';
 import Contact from './components/Contact.vue';
 import FooterComponent from './components/FooterComponent.vue';
 import BackToTop from './components/BackToTop.vue';
@@ -33,6 +34,7 @@ const themeStore = useThemeStore()
         <About />
         <Projects />
         <Tools />
+        <Certificates/>
         <Contact />
         <FooterComponent />
         <BackToTop />

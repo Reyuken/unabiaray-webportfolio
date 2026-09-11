@@ -46,6 +46,7 @@ const closeThemeNotice = () => {
           <li><a href="#landing" @click="closeMenu">Home</a></li>
           <li><a href="#projects" @click="closeMenu">Projects</a></li>
           <li><a href="#tools" @click="closeMenu">Tools</a></li>
+          <li><a href="#certificates" @click="closeMenu">Certifications</a></li>
           <li><a href="#contact" @click="closeMenu">Contact</a></li>
         </ul>
 
