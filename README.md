@@ -24,79 +24,56 @@ This portfolio showcases my projects, skills, and development experience across 
 - UI/UX concepts and prototypes
 
 ---
+# Full-Stack Web Development Projects
 
-# 🧩 Featured Projects
 
-## 🛒 E-commerce API Documentation
-A dynamic E-Commerce workflow system with:
-- Order processing
-- Real-time inventory updates
-- Secure authentication
-- Public API documentation via Postman
+## ✈️ AI-Assisted Full-Stack Airline Booking Web Application
 
----
+AI-assisted full-stack airline booking web application built using Claude Code CLI, Next.js, TypeScript, Tailwind CSS, Prisma, and SQLite.
 
-## 🛍️ E-commerce App
-MEVN stack e-commerce platform featuring:
-- Product catalog
-- Real-time search
-- Shopping cart system
-- Secure checkout
-- Admin dashboard with analytics
+**[View on GitHub](https://github.com/Reyuken/airline-booking)**
 
 ---
 
-## 📚 Course Booking System
+## 📝 Blog Post Management System
 
-### API Version
-RESTful API with:
-- User authentication
-- Course management
-- Enrollment system
+Full-stack blog platform built with the MEVN stack. Features include user authentication, role-based access control, CRUD blog posts, nested comment system, and admin moderation tools.
 
-### Full App Version
-MERN-stack application with:
-- User registration & login
-- Profile management
-- Course browsing & enrollment
+**[View Live Application](https://blog-app-client-unabia.vercel.app/#/)**
 
 ---
 
-## ✈️ Airline Booking System
+## 🌐 3D Portfolio Website
 
-### Mockup
-- UI/UX design for flight search & booking
+Interactive 3D portfolio built with Next.js, React Three Fiber, Drei, Three.js, and Tailwind CSS. Features dynamic 3D models, responsive design, smooth navigation, and cross-device compatibility.
 
-### Prototype
-- Interactive booking flow simulation
-- Seat selection and ticket management
+**[View Live Website](https://my-portfolio-seven-psi-54.vercel.app/)**
 
 ---
 
-## 🎓 Short Courses Capstone
-Capstone projects combining multiple modules into a unified application showcasing full-stack development skills.
+## 🛠️ Technologies
 
----
-
-# 🛠️ Skills
-
-## Frontend
 - HTML
 - CSS
 - JavaScript
-- Bootstrap
-
-## MERN Stack
-- MongoDB
-- Express.js
+- TypeScript
 - React
+- Next.js
+- Vue
 - Node.js
-
-## Tools & Platforms
-- Git & GitHub
-- Postman
-- Heroku
-- Sublime Text
+- Express.js
+- Java
+- Spring Boot
+- C#
+- ASP.NET Core
+- MySQL
+- MongoDB
+- Prisma
+- SQLite
+- REST APIs
+- JWT Authentication
+- Tailwind CSS
+- Bootstrap
 
 ---
 
@@ -105,9 +82,6 @@ Capstone projects combining multiple modules into a unified application showcasi
 Let’s work together and build something amazing!
 
 - 📧 Email: rayunabia2@gmail.com  
-- 🔗 LinkedIn: (add link here)  
-- 🐙 GitHub: (add link here)  
-- 🐦 Twitter: (add link here)
 
 ---
 
