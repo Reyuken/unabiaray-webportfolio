@@ -3,57 +3,57 @@ const base = import.meta.env.BASE_URL
 
 const tools = {
     frontend: [
-        { name: 'HTML', img: base + 'img/html.png' },
-        { name: 'CSS', img: base + 'img/css.png' },
-        { name: 'JavaScript', img: base + 'img/javascript (1).png' },
-        { name: 'ReactJS', img: base + 'img/react (2).png' },
-        { name: 'NextJS', img: base + 'img/nextjs.jpg' },
-        { name: 'Vue', img: base + 'img/vue.png' },
-        { name: 'Tailwind CSS', img: base + 'img/tailwind.png' },
-        { name: 'Bootstrap', img: base + 'img/bootstrap 1.png' }
+        { name: 'HTML', img: base + 'img/tools/html.png' },
+        { name: 'CSS', img: base + 'img/tools/css.png' },
+        { name: 'JavaScript', img: base + 'img/tools/javascript (1).png' },
+        { name: 'ReactJS', img: base + 'img/tools/react (2).png' },
+        { name: 'NextJS', img: base + 'img/tools/nextjs.jpg' },
+        { name: 'Vue', img: base + 'img/tools/vue.png' },
+        { name: 'Tailwind CSS', img: base + 'img/tools/tailwind.png' },
+        { name: 'Bootstrap', img: base + 'img/tools/bootstrap 1.png' }
     ],
 
     backend: [
-        { name: 'NodeJS', img: base + 'img/node-js.png' },
-        { name: 'ExpressJS', img: base + 'img/expressjs.png' },
-        { name: 'Java', img: base + 'img/java.png' },
-        { name: 'Spring Boot', img: base + 'img/springboot.png' },
-        { name: 'ASP.NET Core', img: base + 'img/aspnet.png' },
-        { name: 'C#', img: base + 'img/csharp.png' },
-        { name: 'REST APIs', img: base + 'img/api.png' },
-        { name: 'JWT', img: base + 'img/jwt.png' }
+        { name: 'NodeJS', img: base + 'img/tools/node-js.png' },
+        { name: 'ExpressJS', img: base + 'img/tools/expressjs.png' },
+        { name: 'Java', img: base + 'img/tools/java.png' },
+        { name: 'Spring Boot', img: base + 'img/tools/springboot.png' },
+        { name: 'ASP.NET Core', img: base + 'img/tools/aspnet.png' },
+        { name: 'C#', img: base + 'img/tools/csharp.png' },
+        { name: 'REST APIs', img: base + 'img/tools/api.png' },
+        { name: 'JWT', img: base + 'img/tools/jwt.png' }
     ],
 
     databases: [
-        { name: 'MySQL', img: base + 'img/mysql.png' },
-        { name: 'MongoDB', img: base + 'img/mongodb.png' }
+        { name: 'MySQL', img: base + 'img/tools/mysql.png' },
+        { name: 'MongoDB', img: base + 'img/tools/mongodb.png' }
     ],
 
     testing: [
-        { name: 'Mocha', img: base + 'img/mocha.png' },
-        { name: 'Chai', img: base + 'img/chai.png' },
-        { name: 'Selenium', img: base + 'img/selenium.png' },
-        { name: 'Chai-HTTP', img: base + 'img/chai.png' },
-        { name: 'Postman', img: base + 'img/postman.png' }
+        { name: 'Mocha', img: base + 'img/tools/mocha.png' },
+        { name: 'Chai', img: base + 'img/tools/chai.png' },
+        { name: 'Selenium', img: base + 'img/tools/selenium.png' },
+        { name: 'Chai-HTTP', img: base + 'img/tools/chai.png' },
+        { name: 'Postman', img: base + 'img/tools/postman.png' }
     ],
 
     tools: [
-        { name: 'Git', img: base + 'img/git (2).png' },
-        { name: 'VS Code', img: base + 'img/vscode.png' },
-        { name: 'IntelliJ IDEA', img: base + 'img/intellij.png' },
-        { name: 'JetBrains Rider', img: base + 'img/rider.png' },
-        { name: 'Sublime Text', img: base + 'img/sublime.png' },
-        { name: 'Trello', img: base + 'img/trello.png' },
-        { name: 'Vercel', img: base + 'img/vercel.png' },
-        { name: 'Render', img: base + 'img/render.png' },
-        { name: 'ChatGPT', img: base + 'img/chatgpt.png' },
-        { name: 'Claude', img: base + 'img/claude.png' }
+        { name: 'Git', img: base + 'img/tools/git (2).png' },
+        { name: 'VS Code', img: base + 'img/tools/vscode.png' },
+        { name: 'IntelliJ IDEA', img: base + 'img/tools/intellij.png' },
+        { name: 'JetBrains Rider', img: base + 'img/tools/rider.png' },
+        { name: 'Sublime Text', img: base + 'img/tools/sublime.png' },
+        { name: 'Trello', img: base + 'img/tools/trello.png' },
+        { name: 'Vercel', img: base + 'img/tools/vercel.png' },
+        { name: 'Render', img: base + 'img/tools/render.png' },
+        { name: 'ChatGPT', img: base + 'img/tools/chatgpt.png' },
+        { name: 'Claude', img: base + 'img/tools/claude.png' }
     ],
 
     design: [
-        { name: 'Figma', img: base + 'img/figma.png' },
-        { name: 'Canva', img: base + 'img/canva.png' },
-        { name: 'Photoshop', img: base + 'img/photoshop.png' }
+        { name: 'Figma', img: base + 'img/tools/figma.png' },
+        { name: 'Canva', img: base + 'img/tools/canva.png' },
+        { name: 'Photoshop', img: base + 'img/tools/photoshop.png' }
     ]
 }
 </script>
