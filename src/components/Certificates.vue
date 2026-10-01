@@ -43,6 +43,12 @@ const certificates = [
         issuer: 'Zuitt Coding Bootcamp',
         img: base + 'img/certificates/certificate-java.JPG',
         link: 'https://share.zertify.zuitt.co/certificate/3e421641-f53a-4ab0-b5b1-b84634bad4d7'
+    },
+    {
+        name: 'Introduction to Spring Boot',
+        issuer: 'Zuitt Coding Bootcamp',
+        img: base + 'img/certificates/certificate-springboot.JPG',
+        link: 'https://share.zertify.zuitt.co/certificate/0c9ceb45-20d1-4807-892e-51d9e5418b41/'
     }
 ]
 </script>
